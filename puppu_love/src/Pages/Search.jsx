@@ -1,16 +1,59 @@
-import React from 'react';
+import React,{useState,useRef,useEffect} from 'react';
 import { FaSearch } from "react-icons/fa";
-import styled from 'styled-components'
+import styled from 'styled-components';
+import axios from 'axios';
+
+
 
 export const Search = () => {
+    const [Text,setText]= useState('');
+    const [searchTerm,setSearchTerm]= useState([]);
+    const [isLoading,setIsLoading]= useState(true);
+
+
+    const handleSearch=()=>{
+       if(Text===''){
+        Text='avita'
+        fetchData(Text);
+       }
+       else{
+             
+       }
+    }
+
+    const fetchData=(breedname)=>{
+      setIsLoading(true);
+       axios.get(`https://dog.ceo/api/breed/${breedname}/images`)
+       .then(res=>{
+          // console.log(res.data)
+          setSearchTerm(res.data.message);
+          setIsLoading(false);
+          
+       })
+       .catch(e=>{
+          console.log(e);
+          setIsLoading(false);
+       })
+  }
+  useEffect(()=>{
+     fetchData();
+  },[])
+ 
+    
   return (
     <MainDivWrapper>
     <InnerDivWrapper>
         <div>
-            <input type="text" id='breed' placeholder='Enter Breed Name' />
+            <input 
+            value={Text} 
+            onChange={(e)=>setText(e.target.value)}
+            type="text"  
+            id='breed' 
+            placeholder='Enter Breed Name'
+            />
         </div>
         <div>
-        <button>
+        <button onClick={handleSearch}>
             <FaSearch />
         </button>
     </div>
@@ -18,6 +61,8 @@ export const Search = () => {
     
     </MainDivWrapper>
   )
+
+   
 }
 
 const MainDivWrapper= styled.div`
@@ -42,3 +87,7 @@ const InnerDivWrapper= styled.div`
 
 `;
 
+
+
+
+// https://dog.ceo/api/breed/{breedname}/images
