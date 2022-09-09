@@ -79,9 +79,11 @@
 
          function selectFunc(){
             const st= document.getElementById('st').value;
+            if(st==='all') fetechData(dataBase);
+            else{
             const selectedText= dataBase.filter(function(el){
                 return el.role== st
             })
-            if(selectedText==='all') fetechData(dataBase);
-            else  fetechData(selectedText);
+            fetechData(selectedText);
+        }
          }
