@@ -1,0 +1,66 @@
+#nav {
+  background-color: rgb(250, 248, 246);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  border: 2px solid rgb(250, 246, 240);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+#nav:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+#navlogo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+#navlogo img {
+  height: 40px;
+  width: 50px;
+  box-shadow: rgba(124, 124, 124, 0.15) 1.95px 1.95px 2.6px;
+}
+a {
+  color: blueviolet;
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#pagediv {
+  width: fit-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  padding: 1%;
+}
+#pagediv button {
+  border: 1px solid rgb(245, 220, 197);
+  background-color: rgb(250, 248, 248);
+  padding: 3%;
+  color: purple;
+  font-weight: 900;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: rgba(92, 59, 10, 0.4) 0px 2px 4px,
+    rgba(94, 59, 4, 0.3) 0px 7px 13px -3px,
+    rgba(107, 88, 5, 0.2) 0px -3px 0px inset;
+}
+#pagediv button:hover {
+  box-shadow: rgba(71, 71, 69, 0.18) 0px 2px 4px;
+  border: 3px solid rgb(245, 220, 197);
+}
+
+#sorting,
+#category {
+  border-radius: 10px;
+  height: 40px;
+  width: 120px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Mart</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+     
+</head>
+<body>
+    <div id="nav">
+        <div id="navlogo">
+            <img src="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f6cd-fe0f.svg" alt="MASAI MART">
+            <a href="./index.html">Masai Mart</a>
+        </div>
+        <div id="btndiv">
+           
+            <select id="sorting" onchange="sortData()">
+            <option value="asc">Low to High</option>
+            <option value="desc">High To Low</option>
+        </select>
+        </div>
+        <div id="selectdiv">
+          <select id="category">
+            <option value="all">All Category</option>
+            <option value="men">Men Section</option>
+            <option value="women">Women Section</option>
+            <option value="kids">Kids Section</option>
+            <option value="homedecor">HomeDecor</option>
+          </select>
+        </div>
+        <div id="pagediv">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
+        <div>
+            <a href="./wishlist.html">WishList</a>
+        </div>
+    </div>
+    <div id="container"> </div>
+</body>
+</html>
+<script src="./scripts/index.js"></script>
