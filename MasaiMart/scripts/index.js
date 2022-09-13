@@ -79,14 +79,33 @@
     //   filtering data by category
     let categorySelect= document.getElementById('category');
     categorySelect.addEventListener('change',()=>{
+        let d=data.data;
          categoryfilter= categorySelect.value;
         if(categoryfilter==='all'){
             categoryfilter='';
             getData(page,categoryfilter);
             return;
         }
-        console.log(categoryfilter);
-       getData(page,categoryfilter);
+      else if(categoryfilter==='men'){
+        d= d.filter(function(el){
+            return el.category=='men'
+        })
+        AppendData(d);
+      }
+      else if(categoryfilter==='women'){
+        d= d.filter(function(el){
+            return el.category=='women'
+        })
+        AppendData(d);
+      }
+      else if(categoryfilter==='kids'){
+        d= d.filter(function(el){
+            return el.category=='kids'
+        })
+        AppendData(d);
+      }
+      
+    //    getData(page,categoryfilter);
 
     })
 
