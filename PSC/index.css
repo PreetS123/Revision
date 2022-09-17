@@ -1,0 +1,60 @@
+
+#funcdiv{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ select {
+    border-radius: 10px;
+    border: 2px solid purple;
+    display: block;
+    font-size: 20px;
+    padding: 0.2%;
+    height: 50px;
+  }
+  option {
+    font-size: 25px;
+  }
+
+
+
+  
+#tablediv{
+    width: 80%;
+    /* border: 1px solid black; */
+    padding: 1%;
+    margin: 20px auto;
+  }
+  table,
+  td,
+  th {
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid black; */
+  }
+  
+  th,
+  td {
+    padding: 15px;
+  }
+  
+  tr > th {
+    background-color: teal;
+    color: white;
+  }
+
+
+  .dp{
+    height: 30px;
+    width: 30px;
+    margin: auto;
+  }

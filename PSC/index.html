@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="funcdiv">
+    <select>
+        <option value="">Sort By</option>
+        <option value="L2H">low to high</option>
+        <option value="H2L">high to low</option>
+        
+        </select>
+        <!-- filter-part -->
+        <select name="" onchange="FilterData()" id="filter">
+        <option value="">Filter By department</option>
+        <option value="Training">Training</option>
+        <option value="Product Management">Product Management</option>
+        <option value="Business Development">Business Development</option>
+        <option value="Research and Development">Research and Development</option>
+        <option value="Services">Services</option>
+        <option value="Support">Support</option>
+        </select>
+        
+    </div>
+        <div id="pagi">
+            <!-- <button id="prev">Previous</button>
+            <button id="next">Next</button> -->
+            
+        </div><br/>
+        
+        
+        
+        
+            <!-- main container start from here -->
+            <div id="tablediv">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <!-- <th>Age</th> -->
+                            <th>department</th>
+                            <th>Gender</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+    
+                    </tbody>
+                </table>
+            </div>
+            
+           
+</body>
+</html>
+<script src="./index.js"></script>
