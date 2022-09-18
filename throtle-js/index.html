@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throtle on onclick</title>
+</head>
+<body>
+    <button id="btn" onclick="throttle">Click Me to experience throttle</button>
+    <div id="txtdiv"></div>
+</body>
+</html>
+<script>
+    
+function throttler(){
+    // write code here
+    console.log('throttle')
+    let p=document.createElement('p')
+    p.innerText="I'm an active throtelling";
+    txt.append(p);
+}
+
+
+ const throttle=(func,limit)=>{
+    let flag=true;
+    return function(){
+        func();
+        flag=false;
+     setTimeout(()=>{
+     flag=true;
+     },limit)
+    }
+ }
+
+
+    let txt= document.getElementById('txtdiv');
+    const betterExp= throttle(throttler,1000)
+        const btn= document.getElementById('btn');
+        btn.addEventListener("click",betterExp)
+
+
+
+</script>
