@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Car</title>
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/car.css">
+</head>
+<body>
+    <div id="topnav"></div>
+    <div id="filterdiv">
+        <select id="sortByprice" >
+            <option value="all">sort all price</option>
+            <option value="h2l">High to Low</option>
+            <option value="l2h">Low to High</option>
+        </select>
+         
+        
+          <select name="" id="sortbykms" >
+            <option value="">Kms driven</option>
+            <option value="h2l">High to Low</option>
+            <option value="l2h">Low to High</option>
+        </select>
+  
+  
+        <select id="brand">
+            <option value="Tata">Tata</option>
+            <option value="Maruti">Maruti</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Mahindra">Mahindra</option>
+            <option value="ola">OLA Electric</option>
+            <option value="Toyoto">Toyoto</option>
+            <option value="Renault">Renault</option>
+        </select>
+    </div>
+   
+    <div id="container">
+        
+    </div>
+</body>
+</html>
+<script type="module">
+    import  navbar from "./script/nav.js";
+    let top= document.getElementById('topnav');
+     top.innerHTML=navbar();
+</script>
+<script src="./script/car.js"></script>
