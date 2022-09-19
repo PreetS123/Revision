@@ -112,6 +112,57 @@ function deleteItem(id){
 }
 
 
+  function EditItem(id){
+    // console.log(id)
+      fetch(api+`/${id}`)
+      .then(res=>res.json())
+      .then(res=>{
+        // console.log(res)
+        let editsection= document.getElementById('edit-section');
+        editsection.style.display='block';
+
+        let b= document.getElementById('brand');
+        b.value= res.brand;
+        let y= document.getElementById('year');
+        y.value= res.year;
+        let t= document.getElementById('type');
+        t.value= res.type;
+        let k= document.getElementById('kms');
+        k.value= res.kms;
+        let D= document.getElementById('Description');
+        D.value= res.Description;
+        let P= document.getElementById('Price');
+        P.value= res.Price;
+
+        let update= document.getElementById('update-data');
+        update.addEventListener('click',()=>{
+            let obj={
+                brand: b.value,
+                year: y.value,
+                type: t.value,
+                kms: k.value,
+                Description: D.value,
+                Price: P.value,
+            }
+            // console.log(obj);
+            console.log(id);
+            fetch(api+`/${id}`,{
+                method:'PATCH',
+                body:JSON.stringify(obj),
+                headers:{
+                    'content-type':'application/json'
+                }
+            })
+            .then(res=>res.json())
+            .then(res=>{
+                fetchData();
+                editsection.style.display='none';
+            })
+        })
+      })
+  }
+
+
  let sortBy= document.getElementById('sortByprice');
       sortBy.addEventListener('change',SortPrice);
 

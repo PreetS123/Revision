@@ -51,7 +51,19 @@
     display: block;
     cursor: pointer;
 }
-
+#modify{
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    align-items: center;
+  
+}
+#modify button{
+    background-color: rgb(156, 156, 156);
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 1%;
+}
 #filterdiv{
     display: flex;
     width: 50%;
@@ -59,4 +71,7 @@
     align-items: center;
     justify-content: space-around;
     gap: 20px;
+}
+#edit-section{
+    display: none;
 }
