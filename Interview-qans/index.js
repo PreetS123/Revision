@@ -82,5 +82,120 @@
          // 2. The inner function scope.
          // 3. The global variables.
 
+        
+         // var abc= closureex=(z)=>{
+         //    let x=5;
+         //    return function closure1(){
+         //       let y=10;
+         //       return function closure2(){
+         //          return x+y+z
+         //       }
+         //    }
+         // }
+
+         // console.log(abc(7)()());
+
+
+         /////////////////////////////////////// Scopes in js ////////////////////////////////////////
+         //  Scopes are accessbility of a variable , function and object in some particular area in our code during runtime.
+
+
+         ///////////////////////////////////////////////Web Storage//////////////////////////////////////////////
+         // Web Storage provides a storage area on the web. It is of two types 
+         // 1. Local Storage->It stores data with no expiry Date.
+         // 2. Session Storage-> It stores data for one session. The data is lost when we close the tab or the browser.
+
+
+         /////////////////////////////Difference between cookies and web storage//////////////////////////////
+         // 1.  We can access cokkies both client and server side.
+         //     We can't access web storage in server side.
+
+         // 2.   Maximum data size of cokkies is 4kb. 
+         //      Maximum data size of web-storage is 5 MB . 
+              
+
+         ///////////////////// Prototype ////////////////////////////////////////////
+
+         // Prototype-> An original model on which something is pretended.
+
+         // let obj={
+         //    name:'gopi'
+         // }
+         // let obj1= Object.create(obj);
+         // // obj1.name='rishi';
+         // // obj1.roll=23
+         // console.log(obj1,'obj1');
+
+         // In js a prototype can also have a prototype hence creating a prototype chain.
+
+
+         ///////////////////////////// Inheritance ///////////////////////////////////////
+
+         // Inheritance-> When any object get accessed to the propety of other object is called inheritance.
+
+         // let father={
+         //    name:'krishna'
+         // }
+         // let son= Object.create(father);
+         // console.log(son)
+     
+
+         // let family={
+         //    name:'Krishna',
+         //    myfather(){
+         //       console.log(this.name);
+         //    }
+         // }
+
+         //  let son= Object.create(family);
+
+         //  son.myfather();
+
+         ////////////////////////////// Call Apply Bind ////////////////////////////////////////
+
+         // Call ->  
+         // It invokes a function with  given this value , provided arguments one by one.
+            
+      //    let employee={
+      //       fname:'Preeti',
+      //       lname:'Sharma',
+
+      //    }
+
+      //   function invites(g1,g2){
+      //    console.log(g1+' '+this.fname+' '+this.lname+' '+g2)
+      //   }
+
+      //   invites.call(employee,'Hello','How are you ? ')
+     
+
+      //Apply ---->
+       // It is similar to call but argument intake is different i.e It takes argument as an array.
+
+      //  let emp={
+      //    fname:'rajeev',
+      //    lname:'raj'
+      //  }
+      //  function invites(g1,g2){
+      //    console.log(g1,this.fname,this.lname,g2);
+      //  }
+
+      //  invites.apply(emp,['hello!','How are u ?']);
+
+
+      // Bind---->
+      // It returns a new function taking multiple arguments . 
          
 
+      // let emp1={
+      //    fname:'ram',
+      //    lname:'singh'
+      // }
+
+      //  function invites(g1,g2){
+      //    console.log(this.fname,this.lname,g1,g2)
+      //  }
+
+      //  const emp=invites.bind(emp1);
+
+      //  emp('hello','are u okay')
