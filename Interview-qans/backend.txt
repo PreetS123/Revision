@@ -1,0 +1,54 @@
+What is node.js?
+Node.js is a virtual machine that uses JavaScript as its scripting language.
+It basically runs on chrome V8 javaScript language.
+Node.js is based on an event-driven architecture where I/O runs asynchronously 
+making it lightweight and efficient. 
+It is being used in developing application.
+
+What is difference between a Node.js and JavaScript ?
+
+Node.js--->It is used to perform non blocking activities.
+          It is used as a scripting language  using interpreter.
+
+JavaScript---> For general client side operations.
+               It is used in programming language.
+
+
+//////////////////////////////////////////////////////////
+
+ Why is Node.js single-threaded?
+ Node.js was created explicitly as an experiment in async processing.
+ This was to try a new theory of doing async processing on a single thread 
+ over the existing thread-based implementation of scalling via different framework.
+
+ //////////////////////////////////////////////////////////
+ How do you manage packages in your node.js project?
+ Generally we use npm to manage a number of package installers.
+ To maintain versions of libs being installed in a projects we use package.json and package-lock.json
+ so that there is no issue in porting that app into different environment.
+
+ ///////////////////////////////////////////////////////
+ What is REPL?
+ read,eval.print,loop which further mean evaluating the code and go on.
+
+ ///////////////////////////////////////////////////////////
+ What is the purpose of module.exports?
+ This is used to expose functions of a particular module or file to be used elsewhere in the projects.
+
+ ///////////////////////////////////////////////////
+ What are node.js streams?
+ Streams are instances of EventEmmitter which can be used to work with streaming data in node.js.
+ There are mainly four types of the stream:
+ Writable:streams to which data con be read.(fs.createWriteStream())
+ Readable:streams from which data can be read.(fs.createReadStream())
+ Duplex:streams that both Readable and Writable.(net.Socket)
+ Transform: Duplex streams that can be modify or transform the data as it is written and read.(zlib.createDeflate())
+
+ ////////////////////////////////////////////////////////////
+ What are node.js buffers?
+ In general, buffers is a temporary memory that is mainly used by stream to hold on some data until consumed.
+
+ /////////////////////////////////////////////////////////////
+  What is middleware?
+
+  It is basically a function between request and responce with a certain logic to execute the next function.
