@@ -11,22 +11,12 @@ export const Search = () => {
     const [isLoading,setIsLoading]= useState(true);
 
 
-    const handleSearch=()=>{
-       if(Text===''){
-        Text='avita'
-        fetchData(Text);
-       }
-       else{
-             
-       }
-    }
-
     const fetchData=(breedname)=>{
       setIsLoading(true);
        axios.get(`https://dog.ceo/api/breed/${breedname}/images`)
        .then(res=>{
           // console.log(res.data)
-          setSearchTerm(res.data.message);
+          setSearchTerm(res.data);
           setIsLoading(false);
           
        })
@@ -35,33 +25,40 @@ export const Search = () => {
           setIsLoading(false);
        })
   }
+  
+  const handleInputChange=(e)=>{
+   console.log(e.target.value)
+   setText(e.target.value);
+  }
+
   useEffect(()=>{
-     fetchData();
-  },[])
+     fetchData(Text);
+  },[Text])
  
-    
+    console.log(searchTerm);
+
   return (
     <MainDivWrapper>
     <InnerDivWrapper>
         <div>
             <input 
             value={Text} 
-            onChange={(e)=>setText(e.target.value)}
+            onChange={handleInputChange}
             type="text"  
             id='breed' 
             placeholder='Enter Breed Name'
             />
         </div>
-        <div>
+        {/* <div>
         <button onClick={handleSearch}>
             <FaSearch />
         </button>
-    </div>
+    </div> */}
     </InnerDivWrapper>
     
     </MainDivWrapper>
   )
-
+  
    
 }
 

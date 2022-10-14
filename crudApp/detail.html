@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data in table</title>
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/details.css">
+</head>
+<body>
+    <div id="topnav"></div>
+    <div id="bigbx">
+
+        <div id="filter-section">
+            <select id="country-filter"></select>
+            <div>
+                <button id="asc">Population Ascending</button>
+                <button id="dsc">Population Descending</button>
+            </div>
+        </div>
+
+        <div id="tablediv">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Country</th>
+                        <th>City</th>
+                        <th>Population</th>
+                        <th>Modify</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div id="pagina">
+            <button id="prev">Prev</button>
+            <button id="next">Next</button>
+           </div>
+
+           
+    </div>
+</body>
+</html>
+<script type="module">
+ import  navbar from "./component/navbar.js";
+    let top= document.getElementById('topnav');
+     top.innerHTML=navbar();
+</script>
+<script src="./script/details.js"></script>

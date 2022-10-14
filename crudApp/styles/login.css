@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(252, 232, 232);
+  }
+#main{
+    width: 50%;
+    height: 300px;
+    padding: 2%;
+    margin: auto;
+
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+input{
+    height: 30px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 2%;
+    border-color:rgb(211, 38, 38);
+}
+input:hover{
+    border-color: rgb(88, 19, 153);
+}
+#submit{
+    width: 130px;
+}

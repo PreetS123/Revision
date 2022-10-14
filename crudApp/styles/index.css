@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(248, 230, 230);
+  }
+
+   #container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+   }
+  #inpbx{
+    width: 40%;
+    height: 400px;
+    padding: 2%;
+    border: 2px solid gray;
+    border-radius: 20px;
+  }
+
+  #form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    /* margin: auto; */
+    margin-left: 30px;
+  }
+
+  #form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:20px;
+    font-size: 20px;
+  }
+
+  #form input{
+    display: block;
+    height: 30px;
+    /* width: 70%; */
+    padding: 2%;
+    border-radius: 20px;
+    border: 2px solid purple;
+    /* margin: auto; */
+  }
+
+  #form label:hover{
+    font-weight: 900;
+    font-size: 30px;
+    color: purple;
+  }
+  select {
+    border-radius: 10px;
+    border: 2px solid purple;
+    display: block;
+    font-size: 20px;
+    padding: 0.2%;
+    height: 50px;
+  }
+  option {
+    font-size: 25px;
+  }
+
+  #sub{
+    height: 80px;
+    background-color:purple;
+    color: rgb(231, 252, 236);
+    text-align: center;
+    padding: 2%;
+  }
+
+  #sub:hover{
+    background-color:pink;
+    cursor: pointer;
+    color: purple;
+    font-weight: 800;
+    padding-bottom: 30px;
+  }
