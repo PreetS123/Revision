@@ -1,3 +1,80 @@
+  //////////////////Node.js ///////////////////////////////////////////////
+      
+     Q1.Difference between node.js and javaScript ?
+      JavaScript---->1. It is a scripting language.
+                      2.Used for client side activity for a web application.
+                      
+
+      Node.js------>1. Node.js is a interpretor and environment for javaScript.
+                    2. It is used for accessing or performing any non-blocking
+                       operation of any operating system.
+
+      Q2.What is node.js?
+      Node.js provides a runtime environment for javaScript.
+      It basically runs on chrome V8 j.
+      It is an event driven language which runs asynchrounsly making node.js light-weight  and efficient.
+      It is used for making server-side web application and it uses many different frameworks.
+      Node.js is suitable for something which is faster and more scalable is required.
+      It is being used in developing application for reading, writing ,etc synchronously and asynchronously.
+
+
+      Q3.List down the major benefits of using Node.js?
+      It is very simple to run.
+      It is used to run asynchronous programming.
+      It is higly scalable in natue.
+      It is single threaded.
+
+      Q4. Why node.js is single threaded?
+      Node.js is single threaded in order to perform asynchronous programming.
+      With asynchronous processing , an application can perform better and is more scalable under web loads.
+
+      Q5. How do Node.js works?
+      Node.js is a virtual machine that uses javaScript as its scripting language and runs on the v8 version of chrome.
+      It works on single threaded event loop and a non blocking I/O which provides high rate as it can handle 
+      higher number of concurrent request.
+      By making use of 'HTTP' module, Node.js can run on any stand-alone web server.
+
+      Q6.Where Node.js can be used?
+       1. Real-Time Web Applications
+       2. Distributed System.
+       3. Network application 
+       4. General purpose application.
+
+       Q7. How many types of API functions are there in Node.js?
+        There are two types of API functions in Node.js:
+        Asynchronous, non-blocking functions.
+        Synchronous, blocking functions.
+
+      Q8. What is the difference between Asynchronous and Non-blocking?
+         
+         Asynchronous-----> Using these we can make asynchronous HTTP request that do not 
+                                wait for the server to respond.
+                           These functions continue to respond to the request for which 
+                               it has already received the server response.
+
+         Non-Blocking ------> NOn blocking functions are used in regards with I/O operations.
+                              They immediatly respond with whatever data is available and
+                                  keeps on running as per the request.
+
+
+      Q9. What is package.json?
+          It is basically the manifest file that contains the metaData of the project
+           where we define the properties of a pacakage.
+
+
+      Q10. Explain the concepts of URL module.
+        The URL module in node.js provides various utilities for URL resolutions and parsing.
+        It is a built-in module that helps in splitting up the web address into a readable format.
+        
+                                
+      
+
+
+
+
+
+
+/////////////////////////////////Interview bit Q/Ans /////////////////////////////////////
 What is node.js?
 Node.js is a virtual machine that uses JavaScript as its scripting language.
 It basically runs on chrome V8 javaScript language.
@@ -30,6 +107,7 @@ JavaScript---> For general client side operations.
  ///////////////////////////////////////////////////////
  What is REPL?
  read,eval.print,loop which further mean evaluating the code and go on.
+ It is also known as node-shell in javaScript.
 
  ///////////////////////////////////////////////////////////
  What is the purpose of module.exports?

@@ -238,7 +238,7 @@
       //         The source code is visible to the user.
       //         It doesn't provide data security.
       //         It genarry use HTML, CSS , JavaScript.
-
+      
       // Server Side Scripting->  It run on web server. 
       //              The source code is not visible to the user. 
       //              It provide data security. 
