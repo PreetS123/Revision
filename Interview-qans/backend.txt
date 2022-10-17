@@ -1,38 +1,67 @@
   //////////////////Node.js ///////////////////////////////////////////////
       
      Q1.Difference between node.js and javaScript ?
-      JavaScript---->1. It is a scripting language.
-                      2.Used for client side activity for a web application.
+      JavaScript---->1. JavaScript is a programming language that is used for writting scripts on a website.
+                     2. JavaScript is a upgraded version of ECMAScipt that uses V8 engine written in C++.
+                     3. JavaScript can only run in a browser.
+                     4. It is basically used as client side.
+                     5. It is used for frontend development.
+                     6. JavaScript is capable enough to add HTML tags and play with DOM.
                       
 
-      Node.js------>1. Node.js is a interpretor and environment for javaScript.
-                    2. It is used for accessing or performing any non-blocking
-                       operation of any operating system.
+      Node.js------>1. Node.js is a javaScript runtime environment.
+                    2. Node.js is written on C,C++, and javaScript.
+                    3. Node.js helps javaScript to run outside the browser.
+                    4. Node.js is mostly used on server side.
+                    5. Node.js is used for backend development.
+                    6. Node.js connot add HTML tags.
+
 
       Q2.What is node.js?
-      Node.js provides a runtime environment for javaScript.
-      It basically runs on chrome V8 j.
-      It is an event driven language which runs asynchrounsly making node.js light-weight  and efficient.
-      It is used for making server-side web application and it uses many different frameworks.
-      Node.js is suitable for something which is faster and more scalable is required.
-      It is being used in developing application for reading, writing ,etc synchronously and asynchronously.
-
+        Node.js is an open-sourse backend , javaScript runt-time environment.
+        Node.js is written on C,C++, and javaScript.
+        Node.js helps javaScript to run outside the browser.
+        Node.js is mostly used for server-side web development.
+        Node.js is scalable, light-weight and effecient in nature.
 
       Q3.List down the major benefits of using Node.js?
-      It is very simple to run.
-      It is used to run asynchronous programming.
-      It is higly scalable in natue.
-      It is single threaded.
+      1. It is very simple to learn and run.
+      2. It is used to run asynchronous programming.
+      3. It is higly scalable in natue.
+      4. It is single threaded.
 
       Q4. Why node.js is single threaded?
       Node.js is single threaded in order to perform asynchronous programming.
       With asynchronous processing , an application can perform better and is more scalable under web loads.
 
       Q5. How do Node.js works?
-      Node.js is a virtual machine that uses javaScript as its scripting language and runs on the v8 version of chrome.
+
       It works on single threaded event loop and a non blocking I/O which provides high rate as it can handle 
       higher number of concurrent request.
       By making use of 'HTTP' module, Node.js can run on any stand-alone web server.
+
+      Non-blocking I/o: Non-blocking i/o  means working with multiple requests without blocking the thread for a single request. 
+      I/O basically interacts with external systems such as files, databases.
+       Node.js is not used for CPU-intensive work means for calculations, video processing because a single thread cannot handle the CPU works.
+
+       Asynchronous: Asynchronous is executing a callback function. 
+       The moment we get the response from the other server or database it will execute a callback function.
+        Callback functions are called as soon as some work is finished and this is because the node.js uses an event-driven architecture. 
+       The single thread doesn’t work with the request instead it sends the request
+        to another system which resolves the request and it is accessible for another request.
+
+        Event loop: The event loop contains a single thread and is responsible for handling easy tasks like executing callbacks and network I/O.
+         When the program is to initialize all the top-level code is executed, the code is not in the callback function.
+          All the applications code that is inside callback functions will run in the event loop.
+         EventLoop is the heart of node.js.
+          When we start our node application the event loop starts running right away.
+           Most of the work is done in the event loop.
+
+           Thread pool: Though node.js is single-threaded it internally maintains a thread pool. 
+           When non-blocking requests are accepted there are processed in an event loop, 
+           but while accepting blocking requests it checks for available threads in a thread pool,
+            assigns a thread to the client’s request which is then processed and send back to the event loop, 
+            and response is sent to the respective client.
 
       Q6.Where Node.js can be used?
        1. Real-Time Web Applications
@@ -80,7 +109,8 @@ Node.js is a virtual machine that uses JavaScript as its scripting language.
 It basically runs on chrome V8 javaScript language.
 Node.js is based on an event-driven architecture where I/O runs asynchronously 
 making it lightweight and efficient. 
-It is being used in developing application.
+It is being used in developing server side web application.
+
 
 What is difference between a Node.js and JavaScript ?
 
