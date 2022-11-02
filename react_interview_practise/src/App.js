@@ -1,12 +1,14 @@
 
 import './App.css';
-import { Useeffectex } from './Useeffectex';
+import { Setintervalex } from './Setintervalex';
+// import { Useeffectex } from './Useeffectex';
 
 function App() {
  
   return (
     <div className="App">
-      <Useeffectex/>
+      {/* <Useeffectex/> */}
+      <Setintervalex/>
     </div>
   );
 }
