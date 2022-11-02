@@ -29,6 +29,12 @@
       2. It is used to run asynchronous programming.
       3. It is higly scalable in natue.
       4. It is single threaded.
+      
+      When to use Node.js?
+      1.real-time-application.
+      2. where scalability is at higher priority.
+      3.Collabrative tools
+      4. Data Streaming application
 
       Q4. Why node.js is single threaded?
       Node.js is single threaded in order to perform asynchronous programming.
@@ -95,8 +101,21 @@
         The URL module in node.js provides various utilities for URL resolutions and parsing.
         It is a built-in module that helps in splitting up the web address into a readable format.
         
+        What is the difference between Blocking and Non-Blocking in Node.js?
+        Blocking---> It refers to the blocking of further operations until the current operation is finished.
+                     It get executed synchronously means that the code would be executed line by line.
+                     In it programm wait until the called function or operation returns.
+
+        Non-Blocking-----> It doesn’t block the execution of further operation.
+                            Here program get executed asynchronously means that the program mynot execute line by line.
+                            In it programm calls the function and move to the nexxt operation that doesn’t wait for the previous function to return.
                                 
       
+
+                    /////////////////////////////  Express   ////////////////////////////////
+       Express.js is a small framework that works on top of Node.js web server functionality to simplify its APIs and add helpful new features.
+       It makes it easier to organize your application’s functionality with middleware and routing.
+       It adds helpful utilities to Node.js HTTP objects and facilitates the rendering of dynamic HTTP objects.
 
 
 

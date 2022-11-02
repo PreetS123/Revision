@@ -62,6 +62,10 @@
       </div>
     </div> -->
 
+    <div id="set">
+      <h1 id="std"></h1>
+      <button id="btn">Click</button>
+    </div>
 
   </body>
 </html>
@@ -71,6 +75,15 @@
   //   console.log('secound');
   // },0)
   // console.log('third');
-
+  let std= document.getElementById('std');
+   let btn= document.getElementById('btn');
+   btn.addEventListener('click',()=>{
+    setInterval(()=>{
+     std.innerText='Study Hard'
+  },1000);
+    
+   })
+  
+  
 </script>
-<script src="./index.js"></script>
+<!-- <script src="./p1.js"></script> -->
