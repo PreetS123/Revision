@@ -1,7 +1,7 @@
 /*
   What is React.js?
   React.js is a javaScript frontend library used to build reusable component.
-  
+  React.js is a client-side javaScript library which helps to build user-interface in terms of components.
 */
 
 /*
@@ -30,7 +30,7 @@
 /*
     UseEffect--> UseEffect is a react hook, used for performing operation
      whenever the component is mounted, unmounted and updated.
-      
+      It takes two parameters one is function and other is dependecy array.
      example---->
         import React,{useState,useEffect} from 'react'
 
