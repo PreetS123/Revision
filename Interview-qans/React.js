@@ -1,5 +1,10 @@
 /*
   What is React.js?
+  React is an efficient, flexible, open-source front-end javaScript
+  library created by FaceBook in 2011. It is a tool for building 
+  complex and reusable user interfaces, especially for single-page
+  applications. It follows the component-based approach.
+
   React.js is a javaScript frontend library used to build reusable component.
   React.js is a client-side javaScript library which helps to build user-interface in terms of components.
 */
@@ -7,10 +12,11 @@
 /*
  What are important features of React.js?
   Important features of react.js are:
-  1. It uses VDOM for performance optimization.
-  2. It follows unidirectional data-flow.
-  3. It supports server-side rendering.
-  4. 
+  1).It supports server-side rendering.
+  2).It follows the component-based approach.
+  3). It uses VDOM rather than real DOM for performance optimization.
+  4). It follows unidirectional data-flow.
+  5). React uses JSX, a combination of basic HTML and JavaScript. 
 */
 
 /*
@@ -23,8 +29,10 @@
 
 /*
   What are limitations of React.js ?
-  1. It is not fully fledge website.
-  2. For beginner it would be slightly difficult 
+  1). The first thing is that React is not a fully-fledged framework.
+       It is just a JavaScript library.
+  2). The beginner programmer might face difficulties understanding React fully. 
+  3). The coding might become complex using JSX.
 */
 
 /*
