@@ -1,39 +1,96 @@
-/*
-  What is React.js?
-  React is an efficient, flexible, open-source front-end javaScript
-  library created by FaceBook in 2011. It is a tool for building 
-  complex and reusable user interfaces, especially for single-page
-  applications. It follows the component-based approach.
+  /*
+       What is React.js?
+       React is an efficient, flexible, open-source front-end javaScript
+       library created by FaceBook in 2011. It is a tool for building 
+       complex and reusable user interfaces, especially for single-page
+       applications. It follows the component-based approach.
 
-  React.js is a javaScript frontend library used to build reusable component.
-  React.js is a client-side javaScript library which helps to build user-interface in terms of components.
-*/
+       React.js is a javaScript frontend library used to build reusable component.
+       React.js is a client-side javaScript library which helps to build user-interface in terms of components.
+  */
 
-/*
- What are important features of React.js?
-  Important features of react.js are:
-  1).It supports server-side rendering.
-  2).It follows the component-based approach.
-  3). It uses VDOM rather than real DOM for performance optimization.
-  4). It follows unidirectional data-flow.
-  5). React uses JSX, a combination of basic HTML and JavaScript. 
-*/
+   /*
+        What are important features of React.js?
+         Important features of react.js are:
+          1).It supports server-side rendering.
+           2).It follows the component-based approach.
+          3). It uses VDOM rather than real DOM for performance optimization.
+          4). It follows unidirectional data-flow.
+          5). React uses JSX, a combination of basic HTML and JavaScript. 
+   */
 
-/*
-  What are advantages of React.js ?
-  1. Easy to learn and use.
-  2. Unidirectional data flow.
-  3. Use of VDOM.
-  4. Use of Reusable components.
-*/
+  /*
+       What are advantages of React.js ?
+        1. Easy to learn and use.
+        2. Unidirectional data flow.
+        3. Use of VDOM.
+        4. Use of Reusable components.
+   */
 
-/*
-  What are limitations of React.js ?
-  1). The first thing is that React is not a fully-fledged framework.
-       It is just a JavaScript library.
-  2). The beginner programmer might face difficulties understanding React fully. 
-  3). The coding might become complex using JSX.
-*/
+  /*
+      What are limitations of React.js ?
+        1). The first thing is that React is not a fully-fledged framework.
+            It is just a JavaScript library.
+        2). The beginner programmer might face difficulties understanding React fully.
+        3). The coding might become complex using JSX.
+  */
+
+
+  /*
+       Hooks--> Hooks are a way to manage state in react components.
+       They allow us to use all React features.
+       Using Hooks, we can extract the stateful logic from a component so it can be tested independently and reused. 
+       This makes it possible to share Hooks among many components.
+    */
+  
+   
+   /*
+     State Variable---> State variable is a variable whose value can be updated.
+    */
+
+  /*
+      What is useState in React.
+       UseState is a react hooks and it is used to create a state variable with an initial value.
+       This variable are monitered by VDOM and whenever the value of the variable changes VDOM will
+       re-render the component.
+      
+   */
+  /*
+    What is component in Reat.js?
+  */
+
+  
+  /*
+
+    UseRef---> useRef is a hook that store the value and 
+               not loose the value when component is updated or re-render.
+              Changing value of useRef is not trigered on DOM.
+              We can access the value using .current property.
+            
+     */
+
+  /*
+     When would you use useRef?
+     We can use useRef, when we want to change our state but the value of state shouldn't get triggred on DOM.
+    //  If we don't want to update DOM element but want to get a value we use useRef.
+    */
+
+
+
+  /*
+    How to access DOM element in React?
+     By using useRef.
+   */
+   
+  
+   /*
+     Explain a difference between useState and useRef ?
+      useState is a hook which is used to update the state in functional component.
+
+      useRef is a hook which provides a way to access to the DOM.
+          It returns a mutable ref object so you can access the value using .current property.
+
+     */
 
 /*
     UseEffect--> UseEffect is a react hook, used for performing operation
@@ -97,37 +154,6 @@ setInterval---> SetInterval is a callback function which repeats a given functio
 */
 
 /*
-
-UseRef---> It store the value and not loose the value when component is updated or re-render.
-           Changing value of useRef is not trigered on DOM.
-           If we want to persist the state between re-render of a component then we
-            can use the useRef Hook.
-
-*/
-/*
-    When would you use useRef?
-    If we don't want to update DOM element but want to get a value we use useRef.
-  */
-
-/*
-   Hooks--> Hooks are a way to manage state in react components.
-  */
-
-/*
- State Variable---> It is a variable whose value can be updated.
- */
-
-/*
- What is useState in React.
- UseState---> UseState is a react hooks which is used to manage state variable in React.
- */
-
-/*
-  How to access DOM element in React?
-  By using useRef.
- */
-
-/*
   What is custom Hooks? or What is Costom React Hook?
     Custom Hooks are javaScript function which start with use keyword,
      with some logic inside it.
@@ -144,15 +170,19 @@ UseRef---> It store the value and not loose the value when component is updated 
    Do two component using same hook share State?
      No,
   */
+  
+/*
+   When would you use useContext hook?
+     When we need to write same logic at multiple place then we use useContext hooks for reducing multiple line
+     of same code at many places.
+   */
 
 /*
-     Explain a difference between useState and useRef ?
-      useState is a hook which is used to update the state in functional component.
+    Can a custom React hook return JSX?
+    If a custom hook returns javaScript XML file then it will become similar to any other functional react hooks.
+    Custom hook will return data.
+   */
 
-      useRef is a hook which provides a way to access to the DOM.
-          It returns a mutable ref object so you can access the value using .current property.
-
-     */
 
 /*
      What is memoization in react?
@@ -184,33 +214,23 @@ UseRef---> It store the value and not loose the value when component is updated 
       then memoize the value returned from the function passed into it.
     */
 
-/*
-   When would you use useContext hook?
-     When we need to write same logic at multiple place then we use useContext hooks for reducing multiple line
-     of same code at many places.
-   */
-
-/*
-    Can a custom React hook return JSX?
-    If a custom hook returns javaScript XML file then it will become similar to any other functional react hooks.
-    Custom hook will return data.
-   */
 
 /*
      Explain the difference between useMemo vs useEffect + useState usage in that code?
     */
 
-/*
- */
+  /*
+    */
 
-/*
- */
+   /*
+   */
 
-/*
- */
+  /*
+    */
 
-/*
- */
+    /*
+     */
 
-/*
- */
+  /*
+     What is class component?
+   */
