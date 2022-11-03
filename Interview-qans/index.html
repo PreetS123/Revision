@@ -77,11 +77,17 @@
   // console.log('third');
   let std= document.getElementById('std');
    let btn= document.getElementById('btn');
+   let i=0;
    btn.addEventListener('click',()=>{
-    setInterval(()=>{
-     std.innerText='Study Hard'
-  },1000);
-    
+    let id=setInterval(()=>{
+      console.log(i);
+      i=i+1;
+     std.innerText=i;
+     if(i===5) {
+       i=0;
+     }
+  },500);
+  
    })
   
   
