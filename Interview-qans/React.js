@@ -157,10 +157,13 @@ setInterval---> SetInterval is a callback function which repeats a given functio
   What is custom Hooks? or What is Costom React Hook?
     Custom Hooks are javaScript function which start with use keyword,
      with some logic inside it.
+     Custom Hooks maintain the concept of DRY (don't repeat yourself) in React App.
+     Whenever we feel that we have a logic that is used in multiple functional component,
+      we just create a separate custom hook for it and use it.
      It is being used for better code reusability and readability.
-
+ 
   */
-
+   
 /*
   Can we initialize a state with a function?
     Yes,
@@ -187,7 +190,7 @@ setInterval---> SetInterval is a callback function which repeats a given functio
 /*
      What is memoization in react?
       Their is some time when re-rendering of component creates performance 
-      issue to resolve this problem  react provides memoization. 
+      issue to resolve this problem  react provides memoization.
       Memoization is basically optimization technique that allows a programs 
       to inhance its performance if used at right place.
      */
