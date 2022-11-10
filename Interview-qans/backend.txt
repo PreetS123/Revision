@@ -15,7 +15,7 @@
                     4. Node.js is mostly used on server side.
                     5. Node.js is used for backend development.
                     6. Node.js connot add HTML tags.
-
+  
 
       Q2.What is node.js?
         Node.js is an open-sourse backend , javaScript runt-time environment.
@@ -111,6 +111,20 @@
                             In it programm calls the function and move to the nexxt operation that doesn’t wait for the previous function to return.
                                 
       
+    Q11. What is a difference between framework and library?
+    Ans--> 
+    FrameWork--->1.It comprises of lot of APIs, compilers, support programs, libraries etc.
+                 2.It is difficult to replace frameworks.
+                 3.A framework development requires a lot of code that decrese
+                    performance and increase the load time.
+                  4.Including framework smoothly into an existing project is impossible.
+                 5. Its example are AngularJS, Spring, NodeJS, etc.
+    
+    Library---> 1.It is a collection of helper modules , classes , objects , functions , pre-written code , etc.
+                2. A library is easy to be replaced with another library.
+                3.Building a library requires less code , so there is better performance and fast load time.
+                4. Libraries can be integrated easily into existing projects to add some specific functionality.
+                5.Its example are JQuery , React JS , etc. 
 
                     /////////////////////////////  Express   ////////////////////////////////
        Express.js is a small framework that works on top of Node.js web server functionality to simplify its APIs and add helpful new features.
@@ -119,7 +133,7 @@
 
 
 
-
+  
 
 
 /////////////////////////////////Interview bit Q/Ans /////////////////////////////////////
