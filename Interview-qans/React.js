@@ -223,15 +223,48 @@ setInterval---> SetInterval is a callback function which repeats a given functio
     */
 
   /*
+    What is Context Api in react.js?
+    React context allows us to pass data from parent to child component(s),
+    and consume data in whatever component we need in our application without using props,
+    So React context allows us to share data across our components more easily.
+    
     */
 
    /*
+   Why React Context? We have Redux!!
+   Using Redux intraction with states from parent to child components is quite difficult and
+   it also gives us a complex code.
+   whereas undestanding of concept and code through the usage of Context is far-easier than Redux.
+   
    */
 
+
+
   /*
+  What is useReducer?
+   useReducer hook is generally used when we have complex state-building logic
+   or when the next state value depends upon its previous value
+   as well as when the components are needed to be optimized.
+   The useReducer Hook is the better alternative to the useState hook.
+  
+   The useReducer hook takes three arguments
+   including reducer, initial state, and the function to load the initial state lazily.
+
+   Syntax:
+
+   const [state, dispatch] = useReducer(reducer, initialArgs, init);
     */
 
+
+
     /*
+    What is useNavigate?
+    The useNavigate() hook is introduced in the React Router v6 to replace the useHistory() hook.
+     In the earlier version, the useHistory() hook accesses the React Router history object and
+     navigates to the other routers using the push or replace methods.
+     It helps to go to the specific URL, forward or backward pages. 
+     In the updated version, the React Router’s new navigation API provides a useNavigate() hook 
+     which is an imperative version to perform the navigation actions with better compatibility. 
      */
 
   /*
