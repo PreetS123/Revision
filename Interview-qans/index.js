@@ -1,3 +1,59 @@
+
+/////////////////////////////////////// API ////////////////////////////////
+
+// API-It stands for application programming interface. It is a set of defination and protocol that is helful in
+// building and integrating web application.
+
+// Rest API---> Representational State Transfer Application Programming Interface is helpful in setting up rules
+// and regulation on how the api is going to be performed
+
+// We gan perform GET , POST, PUT, DELETE on the API.
+
+
+
+///////////////////////////////  Rest Operator and Spread Operator /////////////////////////////////////////////////
+
+//Spread operator: The spread operator helps us expand an iterable such as
+//an array where multiple arguments are needed, it also helps to expand the
+//object expressions. In cases where we require all the elements of an
+//iterable or object to help us achieve a task, we use a spread operator.
+
+// Rest operator: The rest parameter is converse to the spread operator.
+// while spread operator expands elements of an iterable, rest operator
+//compresses them. It collects several elements. In functions when we
+//require to pass arguments but were not sure how many we have to pass,
+//the rest parameter makes it easier.
+//  let ab=[9,8,7,6];
+// function restop(a,b,...c){
+//    console.log(c)
+//    let xy=c.reduce((acc,cv)=>{
+//         return acc+cv;
+//    },0);
+//    console.log(a+b+xy);
+// }
+
+//    restop(1,2,3,4,5,6,7,...ab)
+
+
+
+///////////////////////////server side rendring vs client side rendring/////////////////////////////////////
+
+//SERVER SIDE RENDERING:- In a server-side rendering when a user makes a request
+//to a webpage, the server prepare an HTML page by fetching user-specific
+//data and sends it to the user's machine over the internet. The entire process
+// of fetching data from the database, creating an HTML  page and sending it
+//to client happens in milliseconds.
+
+//CLEINT SIDE RENDERING:- Client side rendering is the approach to render
+//content in the browser, and it is become popular when we start javascript
+//libraries. with client side rendering, the initial page reload in naturally
+//a bit slow. However, after that, every subsequent page load is very fast.
+//there is no need to reload the entire UI after every call to the server.
+//The client-side framework manages to update UI with changed data by re-rendering
+//only that particular DOM element
+
+
+
 ////////////////////////////////Multithreaded ////////////////////////////
 
 //    MultiThreading is a phenomenon of executing more that one thred at a particular time.
@@ -274,15 +330,22 @@
 //the prototype of  an object is visible through Object.getPrototypeOf(obj);
 // whereas prototype on constructor functio is available on Object.prototype()
 
-/////////////////////////////////////// API ////////////////////////////////
 
-// API-It stands for application programming interface. It is a set of defination and protocol that is helful in
-// building and integrating web application.
 
-// Rest API---> Representational State Transfer Application Programming Interface is helpful in setting up rules
-// and regulation on how the api is going to be performed
 
-// We gan perform GET , POST, PUT, DELETE on the API.
+///////////////////////////////////////MAP(), REDUCE(), FOREACH(), FILTER()///////////////////////////////////////////
+
+// Map()--->Map method creates a new array
+//         It call a new function for each item.
+//         It doesn't modify the old array else it return a new array.
+//         With map method chaning is possible as it return a new array a/c to the callback condition.
+
+// ForEach()---> It doesn't return a new array .
+//               With forEach method optional chaning is not possible as it doesn't return anything.
+//                It return a undefined value.
+
+
+
 
 //////////////////////////////////Diff b/w client-side script and Server side Script///////////////////////////////////
 
@@ -295,17 +358,6 @@
 //              The source code is not visible to the user.
 //              It provide data security.
 //              It generally uses Java, Ruby, Python,
-
-///////////////////////////////////////MAP(), REDUCE(), FOREACH(), FILTER()///////////////////////////////////////////
-
-// Map()--->Map method creates a new array
-//         It call a new function for each item.
-//         It doesn't modify the old array else it return a new array.
-//         With map method chaning is possible as it return a new array a/c to the callback condition.
-
-// ForEach()---> It doesn't return a new array .
-//               With forEach method optional chaning is not possible as it doesn't return anything.
-//                It return a undefined value.
 
 ////////////////////////// DIFF B/W INLINE AND BLOCK LEVEL ELEMENT ////////////////////////////////////
 
@@ -364,44 +416,13 @@
 //3.) If we use sticky position property then other element will not
 // fill the space left by this element.
 
-///////////////////////////server side rendring vs client side rendring/////////////////////////////////////
 
-//SERVER SIDE RENDERING:- In a server-side rendering when a user makes a request
-//to a webpage, the server prepare an HTML page by fetching user-specific
-//data and sends it to the user's machine over the internet. The entire process
-// of fetching data from the database, creating an HTML  page and sending it
-//to client happens in milliseconds.
 
-//CLEINT SIDE RENDERING:- Client side rendering is the approach to render
-//content in the browser, and it is become popular when we start javascript
-//libraries. with client side rendering, the initial page reload in naturally
-//a bit slow. However, after that, every subsequent page load is very fast.
-//there is no need to reload the entire UI after every call to the server.
-//The client-side framework manages to update UI with changed data by re-rendering
-//only that particular DOM element
 
-///////////////////////////////  Rest Operator and Spread Operator /////////////////////////////////////////////////
 
-//Spread operator: The spread operator helps us expand an iterable such as
-//an array where multiple arguments are needed, it also helps to expand the
-//object expressions. In cases where we require all the elements of an
-//iterable or object to help us achieve a task, we use a spread operator.
 
-// Rest operator: The rest parameter is converse to the spread operator.
-// while spread operator expands elements of an iterable, rest operator
-//compresses them. It collects several elements. In functions when we
-//require to pass arguments but were not sure how many we have to pass,
-//the rest parameter makes it easier.
-//  let ab=[9,8,7,6];
-// function restop(a,b,...c){
-//    console.log(c)
-//    let xy=c.reduce((acc,cv)=>{
-//         return acc+cv;
-//    },0);
-//    console.log(a+b+xy);
-// }
 
-//    restop(1,2,3,4,5,6,7,...ab)
+
 
 // let emp1={
 //    fname:'Md',
