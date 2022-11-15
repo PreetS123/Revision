@@ -260,11 +260,13 @@ setInterval---> SetInterval is a callback function which repeats a given functio
     /*
     What is useNavigate?
     The useNavigate() hook is introduced in the React Router v6 to replace the useHistory() hook.
-     In the earlier version, the useHistory() hook accesses the React Router history object and
+     In it the React Router’s navigation API provides useNavigate() hook 
+     which is an imperative version to perform the navigation actions with better compatibility. 
+
+
+      In the earlier version, the useHistory() hook accesses the React Router history object and
      navigates to the other routers using the push or replace methods.
      It helps to go to the specific URL, forward or backward pages. 
-     In the updated version, the React Router’s new navigation API provides a useNavigate() hook 
-     which is an imperative version to perform the navigation actions with better compatibility. 
      */
 
   /*
