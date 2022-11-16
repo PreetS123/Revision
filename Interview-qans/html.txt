@@ -1,0 +1,218 @@
+/////////////////////////////////////////////////DIFF B/W INLINE AND BLOCK LEVEL ELEMENT/////////////////////////////////
+//Inline Element:-  1.) Inline element occupy only sufficient width required.
+//2.) Inline element does not start in a new line.
+//3.) Inline element allow other inline element to sit behind.
+//4.) Inline element don't have top and bottom margin.
+//BLOCK LEVEL ELEMENT:- 1.) Block Element occupy the full width irrespective
+//of their sufficiency.
+//2.) Block element always start in a line.
+//3.) Block element does not allow other element to sit behind.
+//4.) Block element have top and bottom margin.
+//////////////////////////////////////position property//////////////////////
+//1.) relative:- 1.) It takes gap from it's normal position.
+                // 2.) If we set it's top, left , right, bottom , other element
+                // will not fill up the gap left by this element.
+// .container{
+//     border: 2px solid brown;
+// }
+// .box{
+//     border:2px solid blue;
+//     margin: 5px;
+//     height: 100px;
+//     width:100px;
+//     display:inline-block;
+// }
+// .two{
+//     position: relative;
+//     top:10px;
+//     left:50px;
+// }
+// <body>
+// <div class="container">
+//     <div class="one"></div>
+//     <div class="two"></div>
+//     <div class="three"></div>
+//     <div class="four"></div>
+//     </div>
+// </body>
+//2.) absolute:- 1.) It takes the gap from it's parent container.
+             //  2.) If we set top , bottom , left, right then other element will fill up
+             //   the gap left by this element.
+// .two{
+//     position: absolute;
+//     top:20px;
+//     left:50px;
+// }
+//3.) Fixed:- 1.) An element with fixed position remain at the same position
+            //    even we scroll the page.
+            //2.) We can set the position of the element using top, bottom, left,right
+            //3.) If we use fixed position property then other element will
+             //    fill the position which is left by this element.
+// .container{
+//     border : 2px solid brown;
+//     height:100000px;
+// }
+// .two{
+//     position: fixed;
+//     bottom:0;
+//     right:0;
+// }
+//4.) sticky:- 1.) An element with STICKEY position remain at the same position even
+// we scroll the page.
+        //2.) We can set the position of the element using top, borttom, left, right
+        //3.) If we use sticky position property then other element will not
+        // fill the space left by this element.
+// .two{
+//     position: sticky;
+//     top:10px;
+// }
+/////////////////////////////server side rendring vs client side rendring//////////////////////////////
+//SERVER SIDE RENDERING:- In a server-side rendering when a user makes a request
+//to a webpage, the server prepare an HTML page by fetching user-specific
+//data and sends it to the user's machine over the internet. The entire process
+// of fetching data from the database, creating an HTML  page and sending it
+//to client happens in milliseconds.
+//CLEINT SIDE RENDERING:- Client side rendering is the approach to render
+//content in the browser, and it is become popular when we start javascript
+//libraries. with client side rendering, the initial page reload in naturally
+//a bit slow. However, after that, every subsequent page load is very fast.
+//there is no need to reload the entire UI after every call to the server.
+//The client-side framework manages to update UI with changed data by re-rendering
+//only that particular DOM element
+////////////////////////////////////////////////////////////////////////
+//WHAT ARE THE VARIOUS HTML TAGS??
+//1.) <STRONG> -> marks the text as important.
+//2.)<em> ->  <strong> and <em> tags represent that the span of text is of strong importance
+///////////////////////////////////////////////////////////////////////////
+//2.) Is it possible to change an inline element into a block level element??
+//ans-> Yes, it is possible using the display property with it's value as block
+//-level element.
+/////////////////////////////////////////////////////////////////////////
+//3.) WHAT ARE METADATA?
+//ans -> Metadata is the data(information) about data. <meta> tags always go
+//inside the<head> element,and typically used to specify charector set,
+// page discription, keyword, author of the document and viewpoint setting.
+//Metadata describe unseen HTML elements that directly communicate and clarify
+//website information for search engine.
+{/* <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head> */}
+////////////////////////////////////////////////////////////////////////////
+//4.) WHAT ARE SEMANTIC ELEMENTS?
+//ANS-> Semantic element are those which describe the particular meaning to the
+//browser and the developer .Elements like <form>, <table>, <article>,<figure>
+//are semantic elements.
+//////////////////////////////////////////////////////////////////////////
+//WHAT ARE SELECTORS?
+//WHAT IS SPECIFICITY?
+//WHAT ARE COMBINATOR?
+//MEDIA QUERY?
+//WHAT IS DOM?
+//EVENT LOOP?
+//SPREAD AND REST OPERATOR??
+//UNLIMITED ELEMENT SUM ??
+/*
+//////////////////////////////////////////////////////////////////////////
+Q). WHAT ARE SELECTORS??
+        selectors are used to select the content you want to style. Selectors
+ are the part of CSS rule set. CSS selectors select HTML elements
+ according to its id, class, type, attribute etc.
+ There are five type of Selectors---->
+//ANS-> 1.) SIMPLE SELECTORS
+//a.) Element selector
+//b.) Id Selectors
+//c.) Class Selectors
+//d.) Universal Selectors
+//e.)Grouping Slectors
+//2.) COMBINATORS SELECTORS:-->A combinator is something that explains the relationship between the selectors.
+//a.) Descendant Selector(space)
+//b.) Child Selector(>)
+//c.) Adjacent Sibling Selector (+)
+//d.) General Sibling Selectors(~)
+//3.) Attribute Selectors  ->The [attribute] selector is used to select elements with a specified attribute.
+ Below are the example of attribute selectors
+/* <input type="text" name="" value="">
+ <input type="number" name="" value="">
+<input type="email" name="" value=""> */
+{/* <style>
+input[type="text"]{
+        border:2px solid red;
+}
+</style> */}
+/*
+<head>
+<style>
+a[target] {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+<h2>CSS [attribute] Selector</h2>
+<p>The links with a target attribute gets a yellow background:</p>
+<a href="https://www.w3schools.com">w3schools.com</a>
+<a href="http://www.disney.com" target="_blank">disney.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+</body>
+///////////////////////////////////////////////////////////////////////////
+//4.) Pseudo-class selectors:-
+//example of Pseudo selectore:
+// :link, :hover, :visited, :target, :first-child, last-child, :nth-child(),
+// :checked, :disabled, :enabled, :required
+{/* <body>
+        <div class="box">
+            <p>Paragraph one</p>
+            <p>Paragraph two</p>
+            <p>Paragraph three</p>
+            <p>Paragraph four</p>
+        </div>
+</body>
+<style>
+.box p:first-child{
+        color:red;
+}
+.box p:last-child{
+        color:red;
+}
+.box p:nth-child(2){
+        color:red;
+} */
+//5.) Pseudo-element Selectors:-
+//example of Pseudo-element selectors are--> ::after, ::first-letter, ::before, ::placeholder
+{/* <body>
+        <div>
+                <p>
+                        Hello how are you, Hello how are you, Hello how are you,
+                        Hello how are you, Hello how are you, Hello how are you,
+                        Hello how are you, Hello how are you, Hello how are you,
+                        Hello how are you, Hello how are you, Hello how are you,
+                </p>
+        </div>
+</body> */}
+//<style>
+{/* p::first-letter{
+        fornt-size:90px;
+        color:red;
+} */}
+{/* p::first-line{
+        font-size: 50px;
+        color:black;
+} */}
+//</style>
+/*
+/////////////////////////////////////////////////////////////////////
+//WHAT ARE SPECIFICITY?
+//ANS-->Specificity is an algorithm that calculates the weight that is applied to a
+given CSS declaration. The weight is determined by the number of selectors of each
+weight category in the selector matching the element
+ SPECIFICITY RULE POINT SYSTEM
+//1.) 10,000 POINT TO !Important
+//2.) 1000 POINT TO Inline
+//3.) 100 POINT to id
+//4.) 10 point to class, attribute or pseudo-class
+//5.) 1 for element selector & Pseudo-elements
+//6.) 0 point universal selectors
