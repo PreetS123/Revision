@@ -3,7 +3,9 @@
 //2.) Inline element does not start in a new line.
 //3.) Inline element allow other inline element to sit behind.
 //4.) Inline element don't have top and bottom margin.
-//BLOCK LEVEL ELEMENT:- 1.) Block Element occupy the full width irrespective
+
+//BLOCK LEVEL ELEMENT:- 
+1.) Block Element occupy the full width irrespective
 //of their sufficiency.
 //2.) Block element always start in a line.
 //3.) Block element does not allow other element to sit behind.
