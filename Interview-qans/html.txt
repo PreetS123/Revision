@@ -120,7 +120,7 @@
 /*
 //////////////////////////////////////////////////////////////////////////
 Q). WHAT ARE SELECTORS??
-        selectors are used to select the content you want to style. Selectors
+        selectors are used to select the content we want to style. Selectors
  are the part of CSS rule set. CSS selectors select HTML elements
  according to its id, class, type, attribute etc.
  There are five type of Selectors---->
