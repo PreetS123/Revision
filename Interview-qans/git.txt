@@ -1,0 +1,43 @@
+
+
+  Q). What is Git(global information tracker) ?
+     1. to create branch ---> git branch practice
+     2. to switch newly created branch --> git checkout practice
+     3. to create branch and switch directly---> git checkout -b practice1
+     4. to merge branch in master--> git merge practice1
+     Q). What is diff b/w Git and Github?
+     ans-  Git: Git is a distributed version control system for tracking
+     changes in source code during software development. It is designed
+     for coordinating work among programmers, but it can be used to track
+     changes in any set of files. Its goals include speed, data integrity,
+     and support for distributed, non-linear workflows.
+     GitHub: GitHub is a web-based Git repository hosting service, which
+     offers all of the distributed revision control and source code
+     management (SCM) functionality of Git as well as adding its own
+     features.
+No.     Git                                                             |          GitHub
+------------------------------------------------------------------------------------------------------------------------------------------------                                                                        |
+1.      Git is a software.                                              |        GitHub is a service.
+2.      Git is a command-line tool                                      |        GitHub is a graphical user interface
+3.      Git is installed locally on the system                          |        GitHub is hosted on the web
+4.      Git is maintained by linux.                                     |        GitHub is maintained by Microsoft.
+5.      Git is focused on version control and code sharing.             |        GitHub is focused on centralized source code hosting.
+6.      Git is a version control system to manage source code history.  |        GitHub is a hosting service for Git repositories.
+7.      Git was first released in 2005.                                 |        GitHub was launched in 2008.
+
+
+Q). What are Unit Testing?
+ans-->  Unit testing is the first level of testing done before integration testing.
+Unit testing is such a type of testing technique that is usually performed by
+developers. Although due to the reluctance of developers to test, quality
+assurance engineers also do unit testing.
+Objective of Unit Testing:-
+-----------------------------
+The objective of Unit Testing is:
+To isolate a section of code.
+To verify the correctness of the code.
+To test every function and procedure.
+To fix bugs early in the development cycle and to save costs.
+To help the developers to understand the code base and enable them to make changes quickly.
+To help with code reuse.
+*/
