@@ -4,7 +4,8 @@
      1. to create branch ---> git branch practice
      2. to switch newly created branch --> git checkout practice
      3. to create branch and switch directly---> git checkout -b practice1
-     4. to merge branch in master--> git merge practice1
+     4. to merge branch in master--> git merge practice1.
+
      Q). What is diff b/w Git and Github?
      ans-  Git: Git is a distributed version control system for tracking
      changes in source code during software development. It is designed
@@ -15,25 +16,18 @@
      offers all of the distributed revision control and source code
      management (SCM) functionality of Git as well as adding its own
 
-     Git--> 1. Git is a software and a command line tool.1`q 
+     Git--> 1. Git is a software and a command line tool.
             2. Git is locally installed on our system.
             3. Git is maintained by Linux.
             4. Git is a version control system to manage our code history.
             5. Git was first released in 2005.
 
+    Github--> 1. Github is a service and a graphical user interface hoisted on web.
+              2. Github is maintained by microsoft launched in 2008.
+              3. Github is focused on centralized source code hoisting.
+              4. Github is a hoisting services for Git repositories.
 
 
-
-     features.
-No.     Git                                                             |          GitHub
-------------------------------------------------------------------------------------------------------------------------------------------------                                                                        |
-1.      Git is a software.                                              |        GitHub is a service.
-2.      Git is a command-line tool                                      |        GitHub is a graphical user interface
-3.      Git is installed locally on the system                          |        GitHub is hosted on the web
-4.      Git is maintained by linux.                                     |        GitHub is maintained by Microsoft.
-5.      Git is focused on version control and code sharing.             |        GitHub is focused on centralized source code hosting.
-6.      Git is a version control system to manage source code history.  |        GitHub is a hosting service for Git repositories.
-7.      Git was first released in 2005.                                 |        GitHub was launched in 2008.
 
 
 Q). What are Unit Testing?
