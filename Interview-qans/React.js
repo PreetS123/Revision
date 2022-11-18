@@ -224,7 +224,7 @@ setInterval---> SetInterval is a callback function which repeats a given functio
 
   /*
     What is Context Api in react.js?
-    React context allows us to pass data from parent to child component(s),
+    Context Api is a way to pass data from parent to child component(s),
     and consume data in whatever component we need in our application without using props,
     So React context allows us to share data across our components more easily.
     
