@@ -16,10 +16,10 @@
      offers all of the distributed revision control and source code
      management (SCM) functionality of Git as well as adding its own
 
-     Git--> 1. Git is a software and a command line tool.
-            2. Git is locally installed on our system.
-            3. Git is maintained by Linux.
-            4. Git is a version control system to manage our code history.
+     Git--> 1. Git is a version control system to manage our code history.
+            2. Git is a software and a command line tool.
+            3. Git is locally installed on our system.
+            4. Git is maintained by Linux.
             5. Git was first released in 2005.
 
     Github--> 1. Github is a service and a graphical user interface hoisted on web.
