@@ -263,8 +263,8 @@ setInterval---> SetInterval is a callback function which repeats a given functio
 
 /*
        What is props?
-       React allows us to pass information to a Component 
-       (from a parent component to a child component) using something called props.
+        React allows us to pass information to a Component 
+        (from a parent component to a child component) using something called props.
         Props is basically an object which is available for all the React components.
         Props are read only and cannot be modified by the component to which it belongs. 
      */
@@ -298,7 +298,7 @@ setInterval---> SetInterval is a callback function which repeats a given functio
            The constructor() method is called automatically when a class is initiated,
            and it has to have the exact name "constructor", in fact, if you do not have a constructor method,
            JavaScript will add an invisible and empty constructor method.
-           
+
              eg:- class Car {
               constructor(brand) {  // Constructor
                 this.carname = brand;
