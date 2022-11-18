@@ -14,6 +14,16 @@
      GitHub: GitHub is a web-based Git repository hosting service, which
      offers all of the distributed revision control and source code
      management (SCM) functionality of Git as well as adding its own
+
+     Git--> 1. Git is a software and a command line tool.1`q 
+            2. Git is locally installed on our system.
+            3. Git is maintained by Linux.
+            4. Git is a version control system to manage our code history.
+            5. Git was first released in 2005.
+
+
+
+
      features.
 No.     Git                                                             |          GitHub
 ------------------------------------------------------------------------------------------------------------------------------------------------                                                                        |
