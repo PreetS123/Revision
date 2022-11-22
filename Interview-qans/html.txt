@@ -130,11 +130,13 @@ Q). WHAT ARE SELECTORS??
 //c.) Class Selectors
 //d.) Universal Selectors
 //e.)Grouping Slectors
+
 //2.) COMBINATORS SELECTORS:-->A combinator is something that explains the relationship between the selectors.
 //a.) Descendant Selector(space)
 //b.) Child Selector(>)
 //c.) Adjacent Sibling Selector (+)
 //d.) General Sibling Selectors(~)
+
 //3.) Attribute Selectors  ->The [attribute] selector is used to select elements with a specified attribute.
  Below are the example of attribute selectors
 /* <input type="text" name="" value="">
@@ -161,6 +163,7 @@ a[target] {
 <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
 </body>
 ///////////////////////////////////////////////////////////////////////////
+
 //4.) Pseudo-class selectors:-
 //example of Pseudo selectore:
 // :link, :hover, :visited, :target, :first-child, last-child, :nth-child(),
@@ -183,6 +186,7 @@ a[target] {
 .box p:nth-child(2){
         color:red;
 } */
+
 //5.) Pseudo-element Selectors:-
 //example of Pseudo-element selectors are--> ::after, ::first-letter, ::before, ::placeholder
 {/* <body>
