@@ -1,0 +1,30 @@
+  1. What is noSQL database?explain.
+  Ans. NoSQL stands for "Not Only SQL" 
+       NoSQL is a part of database that can handle and sort all type of unstructured, messy and complicated data.
+       It is just a new way to think about the database.
+
+
+  2) What is MongoDB? explain.
+     MongoDB is an open-source document-oriented database that is designed to store a large scale of data
+     and also allows us to work with that data very efficiently.
+     It is categorized under the NoSQL (Not only SQL) database because 
+     the storage and retrieval of data in the MongoDB are not in the form of tables. 
+
+
+ 3) Which are the different languages supported by MongoDB?
+
+    MonggoDB provides official driver support for C, C++, C#, Java, Node.js, Perl, PHP,
+     Python, Ruby, Scala, Go and Erlang.
+
+ 4) Is MongoDB better than other SQL databases? If yes then how?
+
+    MongoDB is better than other SQL databases because it allows a highly flexible and scalable document structure.
+    For example:
+    One data document in MongoDB can have five columns and the other one in the same collection can have ten columns.
+    MongoDB database are faster than SQL databases due to efficient indexing and storage techniques.
+
+5) Why MongoDB is known as best NoSQL database?
+   a) Rich Query language
+   b) High Performance
+   c) Highly Available
+   d) Easily Scalable
