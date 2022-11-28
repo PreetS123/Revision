@@ -15,7 +15,13 @@
                     4. Node.js is mostly used on server side.
                     5. Node.js is used for backend development.
                     6. Node.js connot add HTML tags.
-  
+      
+
+      What is middleware in React.js?
+      Middleware is a function between request and response with a certain logic to execute the next function.
+      
+      Middleware is any software that acts like glue between an application and its network.
+      It controls the flow of information between an application and the server, database and operating system.
 
       Q2.What is node.js?
         Node.js is an open-sourse backend , javaScript runt-time environment.
