@@ -127,6 +127,11 @@
                 5.Its example are JQuery , React JS , etc. 
 
                     /////////////////////////////  Express   ////////////////////////////////
+
+                    Express is fast and essential web framework of Node.Js. We can assume express as a layer
+                    built on the top of the Node.js that helps manage a server and routes. It provides a
+                     robust set of features to devlop web and mobile application.
+
        Express.js is a small framework that works on top of Node.js web server functionality to simplify its APIs and add helpful new features.
        It makes it easier to organize your application’s functionality with middleware and routing.
        It adds helpful utilities to Node.js HTTP objects and facilitates the rendering of dynamic HTTP objects.
