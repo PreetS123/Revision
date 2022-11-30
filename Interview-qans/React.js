@@ -294,6 +294,19 @@ setInterval---> SetInterval is a callback function which repeats a given functio
 
 /*
            What is constructor function.
+           In JavaScript, a constructor function is used to create objects.
+           To create an object from a constructor function, we use the new keyword.
+           // constructor function
+           function Person () {
+             this.name = 'John',
+             this.age = 23
+            }
+
+         // create an object
+         const person = new Person();
+
+
+
            The constructor() method is a special method for creating and initializing objects created within a class.
            The constructor() method is called automatically when a class is initiated,
            and it has to have the exact name "constructor", in fact, if you do not have a constructor method,
