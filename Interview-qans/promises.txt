@@ -7,7 +7,7 @@ It is a behaviour of javaScript to handle functions that takes time in javaScrip
 First Method to handle asynchronous method in javaScript:
  Q) What is Promises in javaScript?
 
-Promises are object in javaScript that returns single output as per the condition fullfilled or rejected.
+Promises are object in javaScript that returns single output as per the condition resolved or rejected.
 It is generally used for handling of asynchronous nature of javaScript.
 It has three scope
  a) Promised
