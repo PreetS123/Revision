@@ -4,6 +4,24 @@
        It is just a new way to think about the database.
 
 
+
+ Difference between SQL and NoSQL Database.
+   SQL--->
+      Relational Database Management System (RDBMS).
+      These databases have fixed or static or predefined schema.
+      These databases are not suited for hierarchical data storage.
+      These databases are best suited for complex quires.
+      Examples: MySQL, PostgreSQL, Oracle, MS-SQL Server, etc.
+
+   NoSQL--->
+       Non-relational or distributed database system.
+       They have dynamic schema.
+       These databses are best suited for hierarchical data storage.
+       These database are not so good for complex queries.
+       Examples: MongoDB, GraphQL, HBase, Neo4j, Cassandra etc
+
+
+
   2) What is MongoDB? explain.
      MongoDB is an open-source document-oriented database that is designed to store a large scale of data
      and also allows us to work with that data very efficiently.
@@ -15,6 +33,7 @@
 
     MonggoDB provides official driver support for C, C++, C#, Java, Node.js, Perl, PHP,
      Python, Ruby, Scala, Go and Erlang.
+
 
  4) Is MongoDB better than other SQL databases? If yes then how?
 
