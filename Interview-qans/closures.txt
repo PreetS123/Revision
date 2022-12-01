@@ -1,0 +1,17 @@
+
+What is Closures in javaScript?
+Closures is a combination of function and the environment within which that function was declared i.e.
+where inner function has acessed to the variables of outer function.
+Closures make it possible for a function to have a private variables.
+
+let abc=closure=(z)=>{
+    let x=8;
+    return function closures1(){
+        let y=10;
+        return function closures2(){
+            return x+y+z;
+        }
+    }
+}
+console.log(abc(3)()());
+
