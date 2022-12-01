@@ -67,3 +67,30 @@ It has three scope
    getData().then(data => console.log(data));
    output:
    Hello World
+
+   Await: Await function is used to wait for the promise.
+          It is used within the async block only. 
+          It makes the code wait until the promise returns a result.
+          It only makes the async block wait.
+
+          const getData = async() => {
+	      var y = await "Hello World";
+	      console.log(y);
+        }
+
+            console.log(1);
+            getData();
+            console.log(2);
+Output:
+1
+2
+Hello World
+
+
+
+Third way to improve handleing of asynchronous function 
+
+What is try catch ?
+ Try catch is a statment where try and catch block is being executed.
+ Firstly try block is being executed and if there is some exception then catch block gets executed.
+Its an efficient way of writting async await function. and also for error handling.
