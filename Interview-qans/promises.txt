@@ -1,0 +1,61 @@
+What is asynchronous method in javaScript?
+It is a behaviour of javaScript to handle functions that takes time in javaScript.
+ Asynchronous code allows the program to be executed immediately where the synchronous code
+ block further execution of the remaining code until it finishes the current one.
+
+
+First Method to handle asynchronous method in javaScript:
+ Q) What is Promises in javaScript?
+
+Promises are object in javaScript that returns single output as per the condition fullfilled or rejected.
+It is generally used for handling of asynchronous nature of javaScript.
+It has three scope
+ a) Promised
+ b) fullfilled
+ c) rejected
+
+
+ Syntax:-
+        var promise = new Promise(function(resolve, reject) {
+          const x = "geeksforgeeks";
+          const y = "geeksforgeeks"
+          if(x === y) {          
+	          resolve();
+          } else {          
+	          reject();
+          }
+          });
+          
+          promise.
+          	then(function () {
+          		console.log('Success, You are a GEEK');
+          	}).
+          	catch(function () {
+          		console.log('Some error has occurred');
+          	});
+
+
+
+  1. Purpose of  . then() method ?
+       .then() is invoked when a promise is either resolved or rejected.
+       It may also be defined as a career which takes data from promise and further executes it successfully.
+
+
+  2.Purpose of .catch()  method ?
+
+ catch() is invoked when a promise is either rejected or some error has occurred in execution.
+ It is used as an Error Handler whenever at any step there is a chance of getting an error.
+
+
+ Second Method to handle Asynchronous function:
+  Q) What is async/await ?
+
+  It is an easier way of writting  promise in javaScript.
+  Writting async before a function turns that function into a promise.
+  Await is always used with async function.
+  awaits help us to wait for the promise to be fullfilled.
+
+  Async--> Async functions will always return a value.
+   Async function makes sure that a promise is returned 
+   and if it is not returned then JavaScript automatically wraps
+    it in a promise which is resolved with its value.
