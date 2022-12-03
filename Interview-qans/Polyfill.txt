@@ -1,0 +1,99 @@
+What is polyfill ?
+Polyfill is a way to modify or add new functions.
+It is basically a piece of code to add/modify the new functions.
+It is used to provide modern functionality to web browsers.
+
+It is basically a piece of code to provide modern functionality to web browsers.
+It is used to add/modify new functionalities.
+It’s like browser fallback what if your browser doesn’t provide the map( ) function
+then you will need to code your own map( ) function. We will discuss polyfills for the following methods:
+
+Using map( )
+Using forEach( )
+Using reduce( )
+
+We will code our own map( ), forEach( ) and reduce( ) function.
+These are all higher-order function which is defined inside Array.prototype so that they are accessible to all the array declared.
+For creating our own polyfill we need to declare them inside the Array.prototype
+
+1. Polyfill for map( ) function
+
+Example: We have been given the array and we need to multiply each element by two.
+const arr = [1, 2, 3, 4, 5];
+
+function callback(ele) {
+	return ele * 2;
+}
+
+Array.prototype.myMap = function (callback) {
+	const myArr = [];
+	for (const i in this) {
+		myArr.push(callback(this[i]));
+	}
+	return myArr;
+};
+
+const newArr = arr.myMap(callback);
+for (i in newArr) {
+	console.log(newArr[i]);
+}
+
+OutPut:
+2
+4
+6
+8
+10
+
+
+
+2. Polyfill for forEach( ) function
+Example: Creating our own function like forEach( ) function in JavaScript.
+const arr = [1, 2, 3, 4, 5];
+
+function myFunction(ele) {
+	console.log(ele);
+}
+
+Array.prototype.myForEach = function (callback) {
+	for (const i in this) {
+		callback(this[i]);
+	}
+};
+
+arr.myForEach(myFunction);
+
+Output:
+1
+2
+3
+4
+5
+
+
+3. Polyfill for reduce( ) function
+Example: Find the sum of all the even numbers inside the given array.
+const arr = [1, 2, 3, 4, 5, 6];
+
+function callback(ele) {
+	if (ele % 2 == 0) {
+		return true;
+	}
+
+	return false;
+}
+
+Array.prototype.myReduce = function (callback, sum) {
+	for (const i in this) {
+		if (callback(this[i])) {
+			sum += this[i];
+		}
+	}
+	return sum;
+};
+
+const sum = arr.myReduce(callback, 0);
+console.log(sum);
+
+Output:
+12
