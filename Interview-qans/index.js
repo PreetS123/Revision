@@ -44,17 +44,16 @@ to a webpage, the server prepare an HTML page by fetching user-specific
 data and sends it to the user's machine over the internet. The entire process
  of fetching data from the database, creating an HTML  page and sending it
 to client happens in milliseconds.
-2). Source code is not visible to the user because its output
-of server-sideside is an HTML page.
-3). In this any server-side technology can be used and it does not
-depend on the client.
+ 2). Source code is not visible to the user because its output is an HTML page.
+ 3). In this any server-side technology can be used and it does not
+      depend on the client.
  4). It runs on the webserver.
  5). It provides more security for data.
  6). PHP, Python, Java, Ruby are used.
 
 
 CLEINT SIDE RENDERING:- 1).Client side rendering is the approach to render
-content in the browser, and it become popular when we start javascript
+content in the browser, and it become popular when we start using javascript
 libraries.
 2). Source code is visible to the user.
 3). It usually depends on the browser and its version.
