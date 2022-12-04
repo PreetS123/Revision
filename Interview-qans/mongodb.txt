@@ -47,3 +47,9 @@
    b) High Performance
    c) Highly Available
    d) Easily Scalable
+
+
+6) What is Mongoose in MongoDB ?
+  Mongoose module is one of the most powerful external modules of NodeJS. 
+  Mongoose is a MongoDB ODM i.e (Object database Modelling) that used to translate
+  the code and its representation from MongoDB to the Node.js server.
