@@ -38,20 +38,32 @@
 
 ///////////////////////////server side rendring vs client side rendring/////////////////////////////////////
 
-//SERVER SIDE RENDERING:- In a server-side rendering when a user makes a request
-//to a webpage, the server prepare an HTML page by fetching user-specific
-//data and sends it to the user's machine over the internet. The entire process
-// of fetching data from the database, creating an HTML  page and sending it
-//to client happens in milliseconds.
+/*
+SERVER SIDE RENDERING:- In a server-side rendering when a user makes a request
+to a webpage, the server prepare an HTML page by fetching user-specific
+data and sends it to the user's machine over the internet. The entire process
+ of fetching data from the database, creating an HTML  page and sending it
+to client happens in milliseconds.
+2). Source code is not visible to the user because its output
+of server-sideside is an HTML page.
+3). In this any server-side technology can be used and it does not
+depend on the client.
+ 4). It runs on the webserver.
+ 5). It provides more security for data.
+ 6). PHP, Python, Java, Ruby are used.
 
-//CLEINT SIDE RENDERING:- Client side rendering is the approach to render
-//content in the browser, and it become popular when we start using javascript
-//libraries. With client side rendering, the initial page reload is naturally
-//a bit slow. However, after that, every subsequent page load is very fast.
-//there is no need to reload the entire UI after every call to the server.
-//The client-side framework manages to update UI with changed data by re-rendering
-//only that particular DOM element.
 
+CLEINT SIDE RENDERING:- 1).Client side rendering is the approach to render
+content in the browser, and it become popular when we start javascript
+libraries.
+2). Source code is visible to the user.
+3). It usually depends on the browser and its version.
+4). It runs on the user’s computer.
+5). There are many advantages linked with this like faster.
+response times, a more interactive application.
+6). It does not provide security for data.
+7). HTML, CSS, and javascript are used.
+*/
 
 
 ////////////////////////////////Multithreaded ////////////////////////////
