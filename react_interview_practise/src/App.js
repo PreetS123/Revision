@@ -1,16 +1,16 @@
 
 import './App.css';
-// import { SetIntervalek1 } from './SetIntervalek1';
-import { UseRefEx } from './UseRefEx';
+import { SetIntervalek1 } from './ExamplePractise/SetIntervalek1';
+import { UseRefEx } from './ExamplePractise/UseRefEx';
 // import { Setintervalex } from './Setintervalex';
-// import { Useeffectex } from './Useeffectex';
+import { Useeffectex } from './ExamplePractise/Useeffectex';
 
 function App() {
  
   return (
     <div className="App">
-      {/* <Useeffectex/> */}
-      {/* <SetIntervalek1/> */}
+      <Useeffectex/>
+      <SetIntervalek1/>
       <UseRefEx/>
     </div>
   );
