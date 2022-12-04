@@ -45,12 +45,12 @@
 //to client happens in milliseconds.
 
 //CLEINT SIDE RENDERING:- Client side rendering is the approach to render
-//content in the browser, and it is become popular when we start javascript
-//libraries. with client side rendering, the initial page reload in naturally
+//content in the browser, and it become popular when we start using javascript
+//libraries. With client side rendering, the initial page reload is naturally
 //a bit slow. However, after that, every subsequent page load is very fast.
 //there is no need to reload the entire UI after every call to the server.
 //The client-side framework manages to update UI with changed data by re-rendering
-//only that particular DOM element
+//only that particular DOM element.
 
 
 
