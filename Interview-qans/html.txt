@@ -135,7 +135,7 @@ Q). WHAT ARE SELECTORS??
 //a.) Descendant Selector(space)
 //b.) Child Selector(>)
 //c.) Adjacent Sibling Selector (+)
-//d.) General Sibling Selectors(~)
+//d.) General Sibling Selectors(~)(tilda)
 
 //3.) Attribute Selectors  ->The [attribute] selector is used to select elements with a specified attribute.
  Below are the example of attribute selectors
