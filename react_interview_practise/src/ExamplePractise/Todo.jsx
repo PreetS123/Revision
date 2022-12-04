@@ -33,6 +33,15 @@ export const Todo = () => {
       .catch((er) => console.log("er in fetch", er));
   };
 
+   //// deleting data
+   const handleDelete=(id)=>{
+    fetch(`http://localhost:8080/todos/${id}`,{
+        method:'DELETE',
+        'content-type':'application/json'
+    }).then(d=>fetchData(d))
+   }
+
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -98,7 +107,7 @@ export const Todo = () => {
                 style={{ width: "50px", height: "50px" }}
               />
               <p>{item.title}</p>
-              <button>delete</button>
+              <button onClick={()=>handleDelete(item.id)}>delete</button>
             </div>
           );
         })}
