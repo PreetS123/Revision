@@ -53,8 +53,7 @@ VIRTUAL DOM:- How Virtual DOM helps React:
     In react, everything is treated as a component or
     class component. A component can contain a state. Each
     time we change something in our JSX file react updates it on its Virtual DOM tree.
-    Virtual DOM is a copy of real DOM and used by react for performing DOm operation
-      faster, 
+    Virtual DOM is a copy of real DOM and used by react for performing DOm operation faster, 
       React maintains two Virtual DOM at each time, one contains the updated Virtual DOM 
       and one which is just the pre-update version of this updated Virtual DOM.
        Now it compares the pre-update version with the updated Virtual DOM and figures out 
