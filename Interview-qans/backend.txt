@@ -114,7 +114,8 @@
 
         Non-Blocking-----> It doesn’t block the execution of further operation.
                             Here program get executed asynchronously means that the program mynot execute line by line.
-                            In it programm calls the function and move to the nexxt operation that doesn’t wait for the previous function to return.
+                            In it programm calls the function and move to the nexxt operation that doesn’t wait for 
+                            the previous function to return.
                                 
       
     Q11. What is a difference between framework and library?
