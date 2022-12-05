@@ -13,9 +13,9 @@
 
 ///////////////////////////////  Rest Operator and Spread Operator /////////////////////////////////////////////////
 
-//Spread operator: The spread operator helps us expand an iterable such as
-//an array where multiple arguments are needed, it also helps to expand the
-//object expressions. In cases where we require all the elements of an
+//Spread operator: The spread operator helps us expand an array where multiple arguments are needed,
+// it also helps to expand the object expressions. 
+//In cases where we require all the elements of an
 //iterable or object to help us achieve a task, we use a spread operator.
 
 // Rest operator: The rest parameter is converse to the spread operator.
