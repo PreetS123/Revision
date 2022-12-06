@@ -37,11 +37,20 @@ export const Todo1 = () => {
     FetchData();
   }, []);
 
-  
+     //////// data deleting logic starts from here /////////////
+         const handleDelete=(id)=>{
+            fetch(`http://localhost:8080/todos/${id}`, {
+                method: "DELETE",
+                headers:{
+                    'content-type':'application/json'
+                }
+              }).then(r=>FetchData(r))
+         }
 
   return (
     <>
       <div>
+        {/* html part for adding todo */}
         <div
           style={{
             width: "fit-content",
@@ -72,6 +81,36 @@ export const Todo1 = () => {
           >
             ADD
           </button>
+        </div>
+        {/* todo mapping starts here */}
+        <div
+         style={{
+            width: "50%",
+            margin: "auto",
+            height: "fit-content",
+            display: "flex",
+            flexDirection: "column",
+            border: "1px solid black",
+            gap: "10px",
+          }}
+        >
+            {
+                todo?.map(item=>(
+                    <div key={item.id} 
+                    style={{
+                        width: "100%",
+                        height: "fit-content",
+                        display: "flex",
+                        justifyContent: "space-evenly",
+                        alignItems: "center",
+                      }}
+                    >
+                             <img src={item.image} alt={item.title} style={{ width: "50px", height: "50px" }} />
+                             <p>{item.title}</p>
+                             <button onClick={()=>handleDelete(item.id)}>DELETE</button>
+                    </div>
+                ))
+            }
         </div>
       </div>
     </>
