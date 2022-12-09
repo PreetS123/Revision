@@ -40,7 +40,7 @@
 //ANS:     DOM-->
 // DOM stands for ‘Document Object Model’. In simple terms,
 //  it is a structured representation of the HTML elements that are present in a
-//   webpage or web-app. DOM represents the entire UI of your application.
+//   webpage or web-app. DOM represents the entire UI of our application.
 //    The DOM is represented as a tree data structure. It contains a node for
 //     each UI element present in the web document. It is very useful as it allows
 //      web developers to modify content through JavaScript, also it being in
@@ -50,10 +50,8 @@
 
 
 VIRTUAL DOM:- How Virtual DOM helps React:
-    In react, everything is treated as a component or
-    class component. A component can contain a state. Each
-    time we change something in our JSX file react updates it on its Virtual DOM tree.
-    Virtual DOM is a copy of real DOM and used by react for performing DOm operation faster, 
+
+    Virtual DOM is a copy of real DOM and used by react for performing DOM operation faster, 
       React maintains two Virtual DOM at each time, one contains the updated Virtual DOM 
       and one which is just the pre-update version of this updated Virtual DOM.
        Now it compares the pre-update version with the updated Virtual DOM and figures out 
@@ -61,8 +59,8 @@ VIRTUAL DOM:- How Virtual DOM helps React:
        This process of comparing the current Virtual DOM tree with the previous one is known
       as ‘diffing’. Once React finds out what exactly has changed then it updated
       those objects only, on real DOM.
-       React uses something called 'batch updates' to
-      update the real DOM. It just means that the changes to the real DOM are sent in
+       React uses something called 'batch updates' to update the real DOM.
+       It just means that the changes to the real DOM are sent in
        batches instead of sending any update for a single change in the state of a
        component. We have seen that the re-rendering of the UI is the most expensive
        part and React manages to do this most efficiently by ensuring that the Real
