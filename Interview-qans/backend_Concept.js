@@ -1,7 +1,8 @@
-//! Function currying
-//? Function currying is a technique of evaluating a function with multiple arguments, into a sequence of functions with a single argument.
-//? It is also known as partial function application.
-
+/* ! Function currying
+    Function currying is a technique of evaluating a function with multiple arguments,
+      into a sequence of functions with a single argument.
+    It is also known as partial function application.
+*/
 const add = (a, b) => {
     return a + b;
   };
