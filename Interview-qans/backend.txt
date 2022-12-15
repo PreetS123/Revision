@@ -133,6 +133,12 @@
                 4. Libraries can be integrated easily into existing projects to add some specific functionality.
                 5.Its example are JQuery , React JS , etc. 
 
+  Q12) What is Multer in node?
+
+     Multer is a node.js middleware for handling multipart/form-data,
+     which is primarily used for uploading files. 
+      It is written on top of busboy for maximum efficiency.
+
                     /////////////////////////////  Express   ////////////////////////////////
 
                     Express is fast and essential web framework of Node.Js. We can assume express as a layer
