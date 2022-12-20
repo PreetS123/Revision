@@ -107,7 +107,7 @@
         The URL module in node.js provides various utilities for URL resolutions and parsing.
         It is a built-in module that helps in splitting up the web address into a readable format.
         
-        What is the difference between Blocking and Non-Blocking in Node.js?
+       Q11. What is the difference between Blocking and Non-Blocking in Node.js?
         Blocking---> It refers to the blocking of further operations until the current operation is finished.
                      It get executed synchronously means that the code would be executed line by line.
                      In it programm wait until the called function or operation returns.
@@ -118,7 +118,7 @@
                             the previous function to return.
                                 
       
-    Q11. What is a difference between framework and library?
+    Q12. What is a difference between framework and library?
     Ans--> 
     FrameWork--->1.It comprises of lot of APIs, compilers, support programs, libraries etc.
                  2.It is difficult to replace frameworks.
@@ -133,11 +133,21 @@
                 4. Libraries can be integrated easily into existing projects to add some specific functionality.
                 5.Its example are JQuery , React JS , etc. 
 
-  Q12) What is Multer in node?
+  Q13) What is Multer in node?
 
      Multer is a node.js middleware for handling multipart/form-data,
      which is primarily used for uploading files. 
       It is written on top of busboy for maximum efficiency.
+
+  Q14) What are different modules of node.js ?
+       http--> creates an HTTP server in Node.js
+       assert--> set of assertion functions usefull for testing.
+       fs--> used to handle file system.
+       path--> includes methods to deal with file path
+       process--> provides information and control about the current Node.js process.
+       os--> provides information about the operatiing system.
+       querystring--> utility used for parsing and formatting url querry strings.
+       url--> module provides utilities for URL resolution and parsing.
 
                     /////////////////////////////  Express   ////////////////////////////////
 
@@ -185,3 +195,73 @@
   A JSON web token(JWT) is JSON Object which is used to securely transfer information over the web(between two parties).
   It can be used for an authentication system and can also be used for information exchange.
   The token is mainly composed of header, payload, signature. 
+
+  ////////////////////////////////////Node.JS////////////////////////////////////////
+
+  Q). What Is Body-parser?
+ANS---> 1). Body-parser parses is an HTTP request body that usually helps when you need to know more than just the URL being hit.
+        2). Specifically in the context of a POST, PATCH, or PUT HTTP request where the information you want is contained in the body.
+        3). Using body-parser allows you to access req.body from within routes and use that data.
+        4). For example: To create a user in a database.
+Q). Synthetic event??
+ANS-->    synthetic event system, which is a cross-browser wrapper around the browser's native event.
+          Another benefit is that it increases the performance of the application as React reuses
+          the event object.
+          EXAMPLE-->  function handleSubmit = (e) =>{
+            e.preventDefault();
+            console.log('you clicked the submit button)
+          }
+          return(
+            <form onSubmit = {handleSubmit}>
+            </form>
+          )
+Q).  What is NPM ?
+ans-->  NPM stands for Node Package Manager, responsible for managing all
+        the packages and modules for Node.js.
+Q).  What are the modules in Node.js?
+Ans--> Modules are like JavaScript libraries that can be used in a Node.js
+application to include a set of functions. To include a module in a Node.js
+ application, use the require() function with the parentheses containing
+ the module's name.
+ Core Modules
+1). HTTP
+Includes classes, methods, and events to create a Node.js HTTP server
+2). util
+Includes utility functions useful for developers
+3). fs
+Includes events, classes, and methods to deal with file I/O operations
+4). url
+Includes methods for URL parsing
+5). query string
+Includes methods to work with query string
+6). stream
+Includes methods to handle streaming data
+7). zlib
+Includes methods to compress or decompress files
+Q). What is the purpose of the module .Exports?
+Ans--> In Node.js, a module encapsulates all related
+codes into a single unit of code that can be parsed
+by moving all relevant functions into a single file.
+You may export a module with the module and export the function,
+which lets it be imported into another file with a needed keyword.
+Q). What is the command used to import external libraries?
+Ans--> The “require” command is used for importing external libraries.
+For example - “var http=require (“HTTP”).”  This will load the HTTP
+library and the single exported object through the HTTP variable.
+Q). What is an Event Loop in Node.js?
+Ans--> Event loops handle asynchronous callbacks in Node.js. It is the
+foundation of the non-blocking input/output in Node.js, making it one of
+the most important environmental features.
+Q).  What are the two types of API functions in Node.js?
+Ans--> The two types of API functions in Node.js are:
+Asynchronous, non-blocking functions
+Synchronous, blocking functions
+Q). What are streams in Node.js?
+Ans--> Streams are objects that enable you to read data or write data
+continuously.
+There are four types of streams:
+Readable – Used for reading operations.
+Writable − Used for write operations.
+Duplex − Can be used for both reading and write operations.
+Transform − A type of duplex stream where the output is computed based on
+input.

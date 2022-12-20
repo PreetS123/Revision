@@ -1,28 +1,16 @@
 const express= require('express');
 const connection = require('./config');
-const userModel= require('./Crud.model');
-
+const cors= require('cors');
+// const userModel= require('./Crud.model');
+const authRouter= require('./routes/Auth.routes');
 const app= express();
 app.use(express.json());
+app.use(cors());
 
- app.get('/',async(req,res)=>{
-   try{
-     const user= await userModel.find();
-     res.send(user);
-   }catch(er){
-    res.send({message:er.message})
-   }
- })
 
- app.post('/',async(req,res)=>{
-    try{
-      const user= await userModel.create(req.body);
-      user.save();
-      res.send(user);
-    }catch(er){
-     res.send({message:er.message})
-    }
-  })
+app.use('/auth',authRouter);
+
+ 
     
 
 app.listen(8080,async()=>{
