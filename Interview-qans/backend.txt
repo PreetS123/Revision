@@ -1,3 +1,395 @@
+ /*
+
+Q). What is difference b/w JavaScript and React??
+Ans--> React is a JavaScript library that allows developers to create single-page apps. 
+React offers a component-based approach to building apps which leads to high reusability of code.
+
+Plain JavaScript library is for small applications and it offers the ability to build web pages
+like you would in any web browser. Plain JavaScript is not meant for large-scale applications due to
+the lack of reusability and structure. When it comes to React, there are many benefits that can be
+obtained such as component-based development and high performance.
+
+React--> 1) Social Networking apps 2) Single page application 3) Large applications
+JavaScript--> 1) Small application 2) Building a landing page 3) company portfolio website
+
+Q). diff b/w NodeJS and JavaScript?
+JavaScript---->
+1) Javascript is a programming language that is used for
+ writing scripts on the website.
+
+ 2) It is the upgraded version of ECMA script that uses Chrome’s 
+   V8 engine written in C++. 
+
+ 3) Javascript can only be run in the browsers.
+
+ 4) JavaScript is basically used in frontend development.
+    
+ 5) Javascript is capable enough to add HTML and play with the DOM. 
+
+ 6) Javascript can run in any browser engine as like JS core in safari
+  and Spidermonkey in Firefox.
+
+7) Some of the javascript frameworks are RamdaJS, TypedJS, etc. 
+
+
+NodeJS---->
+1) NodeJS is a Javascript runtime environment.
+
+2) We can run Javascript outside the browser with the help of NodeJS.
+
+8) Nodejs is written in C, C++ and Javascript.
+
+3) It is mostly used on the server-side.
+
+4) Nodejs does not have capability to add HTML tags.
+
+5) V8 is the Javascript engine inside of node.js that parses 
+  and runs Javascript. 
+
+6) Nodejs is used in server-side development.
+
+7) Some of the Nodejs modules are Lodash, express etc. 
+   These modules are to be imported from npm. 
+
+
+diff b/w framework and Library?
+
+Framework----->
+1) It comprises of lot of APIs , compilers , support programs , 
+  libraries etc.
+
+2) It is difficult to replace frameworks.
+
+3) A framework development requires a lot of code that decrease 
+  performance and increase the load time.
+
+4) Including framework smoothly into an existing project is impossible.
+
+5) Its example are AngularJS , Spring , NodeJS , etc.
+
+Library---->
+
+1) It is a collection of helper modules , classes , objects , functions , 
+   pre-written code , etc.
+
+2) A library is easy to be replaced with another library.
+
+3) Building a library requires less code , so there is better performance 
+  and fast load time.
+
+4) Libraries can be integrated easily into existing projects to add some 
+specific functionality.
+5) Its example are JQuery , React JS , etc. 
+
+Why we use nodejs?
+Node. js offers numerous benefits for web app development such as high scalability,
+ ease of learning, extraordinary performance, profound extensiveness,Everything is asynchronous,It yields great concurrency, active support 
+ from a large community of developers, among others.
+
+
+Q4. Why node.js is single threaded?
+ Node.js is single threaded in order to perform asynchronous programming.
+With asynchronous processing , an application can perform better and is
+more scalable under web loads.
+
+Q) How NodeJS works?
+Ans--> WOrking of Nodejs is-->
+
+Clients send requests to the webserver to interact with the web application. Requests can be non-blocking or blocking:
+->Querying for data
+->Deleting data 
+->Updating the data
+>Node.js retrieves the incoming requests and adds those to the Event Queue
+>The requests are then passed one-by-one through the Event Loop. It checks if the requests are simple enough not to 
+require any external resources
+>The Event Loop processes simple requests (non-blocking operations), such as I/O Polling, and returns the responses
+ to the corresponding clients
+>A single thread from the Thread Pool is assigned to a single complex request. This thread is responsible for 
+ completing a particular blocking request by accessing external resources, such as computation, database, file system, etc.
+>Once the task is carried out completely, the response is sent to the Event Loop that sends that response back to the client.
+
+Q.) What is express?
+ans  
+Express is fast and essential web framework of Node.Js. We can assume express as a layer
+built on the top of the Node.js that helps manage a server and routes. It provides a 
+robust set of features to devlop web and mobile application. 
+
+
+Q). What is middleware?
+  It is basically a function between request and responce with a certain logic to execute the next function.
+
+
+Q8. What is the difference between Asynchronous and Non-blocking?
+         
+         
+Asynchronous----->
+Using these we can make asynchronous HTTP request that do not 
+wait for the server to respond.
+These functions continue to respond to the request for which 
+it has already received the server response.
+ Non-Blocking ------> 
+NOn blocking functions are used in regards with I/O operations.
+They immediatly respond with whatever data is available and
+keeps on running as per the request.
+
+
+
+  Q10. Explain the concepts of URL module.
+The URL module in node.js provides various utilities for URL resolutions
+and parsing.It is a built-in module that helps in splitting up the web 
+address into a readable format.
+        
+
+
+
+1. What is noSQL database?explain.
+  Ans. NoSQL stands for "Not Only SQL"
+       NoSQL is a part of database that can handle and sort all type of unstructured, messy and complicated data.
+       It is just a new way to think about the database.
+
+
+  2) What is MongoDB? explain.
+     MongoDB is an open-source document-oriented database that is designed to store a large scale of data
+     and also allows us to work with that data very efficiently.
+     It is categorized under the NoSQL (Not only SQL) database because
+     the storage and retrieval of data in the MongoDB are not in the form of tables.
+
+     Q). How data store in Mongodb?
+     Ans--> 1) In Mongodb we have collection which is equivalent to table.
+            2) Within collection we have document which is equivalent to specific record of the table.
+            3) Within document data is stored in key/value pair where as in table data is stored in the form of row and column.
+            4) In mongodb we can store data in the form of BSON that is binary serialization of json like document. 
+
+ 3) Which are the different languages supported by MongoDB?
+    MonggoDB provides official driver support for C, C++, C#, Java, Node.js, Perl, PHP,
+     Python, Ruby, Scala, Go and Erlang.
+
+ 4) Is MongoDB better than other SQL databases? If yes then how?
+    MongoDB is better than other SQL databases because it allows a highly flexible and scalable document structure.
+    For example:
+    One data document in MongoDB can have five columns and the other one in the same collection can have ten columns.
+    MongoDB database are faster than SQL databases due to efficient indexing and storage techniques.
+    
+5) Why MongoDB is known as best NoSQL database?
+   a) Rich Query language
+   b) High Performance
+   c) Highly Available
+   d) Easily Scalable
+
+
+//////////////////////////////////////////////////////////////////
+
+Q). What Is Body-parser?
+
+ANS---> 1). Body-parser parses is an HTTP request body that usually helps when you need to know more than just the URL being hit.
+
+        2). Specifically in the context of a POST, PATCH, or PUT HTTP request where the information you want is contained in the body.
+
+        3). Using body-parser allows you to access req.body from within routes and use that data.
+
+        4). For example: To create a user in a database. 
+
+
+        
+Q). Synthetic event??
+ANS-->    synthetic event is a cross-browser wrapper around the browser's native event. 
+          The benefit of synthetic event is that it increases the performance of 
+          the application as React reuses the event object.
+
+          EXAMPLE-->  function handleSubmit = (e) =>{
+            e.preventDefault();
+            console.log('you clicked the submit button)
+          }
+          
+          return(
+            <form onSubmit = {handleSubmit}>
+             
+            </form>
+          )
+
+Q).  What is NPM ?
+ans-->  NPM stands for Node Package Manager, responsible for managing all 
+        the packages and modules for Node.js.
+
+Q).  What are the modules in Node.js?
+Ans--> Modules are like JavaScript libraries that can be used in a Node.js 
+application to include a set of functions. To include a module in a Node.js
+ application, use the require() function with the parentheses containing 
+ the module's name.
+
+ Core Modules
+
+1). HTTP
+
+Includes classes, methods, and events to create a Node.js HTTP server 
+
+2). util
+
+Includes utility functions useful for developers
+
+3). fs
+
+Includes events, classes, and methods to deal with file I/O operations
+
+4). url
+
+Includes methods for URL parsing
+
+5). query string
+
+Includes methods to work with query string
+
+6). stream
+
+Includes methods to handle streaming data
+
+7). zlib
+
+Includes methods to compress or decompress files
+
+
+Q). What is the purpose of the module.exports?
+Ans--> In Node.js, a module encapsulates all related 
+codes into a single unit of code that can be parsed 
+by moving all relevant functions into a single file. 
+You may export a module with the module and export the function, 
+which lets it be imported into another file with a needed keyword.
+
+Q). What is the command used to import external libraries?
+Ans--> The “require” command is used for importing external libraries. 
+For example - “var http=require (“HTTP”).”  This will load the HTTP 
+library and the single exported object through the HTTP variable.
+
+Q). What is an Event Loop in Node.js?
+Ans--> Event loops handle asynchronous callbacks in Node.js. It is the 
+foundation of the non-blocking input/output in Node.js, making it one of 
+the most important environmental features.
+
+
+Q).  What are the two types of API functions in Node.js?
+Ans--> The two types of API functions in Node.js are:
+
+Asynchronous, non-blocking functions
+Synchronous, blocking functions
+
+Q). What are streams in Node.js?
+Ans--> Streams are objects that enable you to read data or write data 
+continuously.
+
+There are four types of streams:
+
+Readable – Used for reading operations.
+
+Writable − Used for write operations.
+
+Duplex − Can be used for both reading and write operations.
+
+Transform − A type of duplex stream where the output is computed based on 
+input.
+
+
+Q). What is Thread pool ??
+Ans-->A thread pool is a collection of worker threads It is basically used 
+to assign a single thread to a single complex request. 
+This thread is responsible for completing a particular blocking request by accessing 
+external resources, such as computation, database, file system, etc.
+
+Once the task is carried out completely, the response is sent to the Event Loop 
+that sends that response back to the client.
+
+
+What is diff b/w render and re-render??
+
+
+Q). Why does Node.js prefer Error-First Callback?
+
+ANS--> Nodejs prefer Error-First Callback because 
+without this convention, developer would'nt have to 
+maintain different signature and APIs, without 
+knowing where to place the error in the argument array.
+ This is a convention that make it easy to create 
+ libraries that work with each other.
+
+ In the below example, we will be using the fs.readFile() method for 
+ showing the use of the error-first callback function.
+ 
+Example-->
+
+ // Using the fs module through import
+const fs = require("fs");
+  
+// The following file does not exists
+const file = "file.txt";
+  
+// This should throw an error
+// using the Error-first callback
+const ErrorFirstCallback = (err, data) => {
+if (err) {
+    return console.log("Error: " + err);
+}
+console.log("Function successfully executed");
+};
+  
+// Executing the function
+fs.readFile(file, ErrorFirstCallback);
+
+
+
+
+
+Q).  What is the Aggregation Framework in MongoDB?
+Ans--> The aggregation framework is a set of analytics tools within MongoDB that allow you to do analytics on 
+documents in one or more collections.
+
+The aggregation framework is based on the concept of a pipeline. With an aggregation pipeline, we take input 
+from a MongoDB collection and pass the documents from that collection through one or more stages, each of which 
+performs a different operation on its inputs (See figure below). Each stage takes as input whatever the stage 
+before it produced as output. The inputs and outputs for all stages are documents—a stream of documents.
+
+
+
+Q). Explain the concept of pipeline in the MongoDB aggregation framework.
+Ans-->An individual stage of an aggregation pipeline is a data processing unit. 
+It takes in a stream of input documents one at a time, processes each document 
+one at a time, and produces an output stream of documents one at a time (see figure below).
+
+
+Q) Explain the term “Indexing” in MongoDB?
+Ans--> In MongoDB, indexes help in efficiently resolving queries. What an Index does is that it 
+stores a small part of the data set in a form that is easy to traverse. The index stores the value
+ of the specific field or set of fields, ordered by the value of the field as specified in the index. 
+MongoDB’s indexes work almost identically to typical relational database indexes.
+
+Indexes look at an ordered list with references to the content. These in turn allow MongoDB to query 
+orders of magnitude faster.
+To create an index, use the createIndex collection method.
+For example:
+> db.users.find({"username": "user101"}).explain("executionStats")
+Here, executionStats mode helps us understand the effect of using an index to satisfy queries.
+
+Q). How to connect MongoDB database with NodeJS?
+Ans--> To connect a Node. js application to MongoDB, we have to use a library called Mongoose. 
+mongoose.connect("mongodb://localhost:27017/collectionName", { useNewUrlParser: true, useUnifiedTopology: true });
+
+*/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   //////////////////Node.js ///////////////////////////////////////////////
       
      Q1.Difference between node.js and javaScript ?
@@ -120,7 +512,7 @@
       
     Q12. What is a difference between framework and library?
     Ans--> 
-    FrameWork--->1.It comprises of lot of APIs, compilers, support programs, libraries etc.
+    FrameWork--->1.It contain of lot of APIs, compilers, support programs, libraries etc.
                  2.It is difficult to replace frameworks.
                  3.A framework development requires a lot of code that decrese
                     performance and increase the load time.

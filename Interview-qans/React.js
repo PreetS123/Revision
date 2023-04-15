@@ -326,6 +326,158 @@ setInterval---> SetInterval is a callback function which repeats a given functio
            Components make the task of building UIs much easier. 
           */
 
+      /*
+
+      
+   Q). What is redux??
+Redux is an open-source JavaScript library for managing and centralizing application state.
+It is most commonly used with libraries such as React or Angular for building user interfaces.
+
+
+
+
+
+
+  Q) What is thunk??
+  Ans-->
+  Thunk is a middleware that extends the ability of redux and allow you 
+  to write complex logic that interacts with the store. Thunk doesn’t 
+  interfere with the action until it returns a function. Thunk allows us
+   to dispatch actions manually, which gives us the power to incorporate 
+   some logic or run some asynchronous code before dispatching an action.
+  The function returned from action is called a thunk function which is 
+  called with two arguments : 
+
+1. dispatch: It is a method used to dispatch actions, that can be received
+ by reducers. 
+2. getState: It gives access to store inside the thunk function.
+
+A thunk function may contain any arbitrary logic, sync, or async, and 
+can call dispatch or getState at any time.
+
+Q). What is the flow of Redux??
+  Ans--> As we know Redux is used for managing and centralizing application
+    state in ReactJs. All the actions are being declared in the actiontypes file
+    and all the actions are being performed in action file, and the state is being
+    maintained in Reducer file. We call the Reducer in Store and then we wrap up
+    our main file with Store using Provider.
+    And We use useSelector and useDispatcher hooks to access the state from the store.
+
+  Q). What is store in Redux?
+  Ans--> Store: It is an object which provides the state of the application. This object
+  is accessible with help of the provider in overall project.
+
+  Q). What is useSelecter and Dispatcher in Redux?
+  Ans-->1) useSelector() is a set of hook and provides access to the Redux store state.
+        2) useDispatch() is used to dispatch actions to the reducer. (edited)
+
+
+
+Q) What is Redux toolkit ??
+Ans--> Redux Toolkit is a set of tools that helps simplify Redux development.
+     It includes utilities for creating and managing Redux stores, as well as 
+    for writing Redux actions and reducers.
+The Redux team recommends using Redux Toolkit anytime you need to use Redux.
+  Q). What is arbitrary Logic ??
+  Ans--> 
+
+
+
+
+
+  Q). What is MVC ?
+ANS--> MVC is an architectural pattern that separates an application into 
+three main logical components Model, View, and Controller. It isolates the business
+logic and presentation layer from each other. It was traditionally used for desktop
+graphical user interfaces (GUIs). Nowadays, MVC is one of the most frequently used
+industry-standard web development frameworks to create scalable and extensible projects.
+
+Model- The Model component corresponds to all the data-related logic that the user works with.
+ This can represent either the data that is being transferred between the View and Controller 
+ components or any other business logic-related data. It can add or retrieve data from the database.
+ It responds to the controller’s request because the controller can’t interact with the database by 
+ itself. The model interacts with the database and gives the required data back to the controller.
+
+View- The View component is used for all the UI logic of the application. It generates a user interface
+ for the user. Views are created by the data which is collected by the model component but these data 
+ aren’t taken directly but through the controller. It only interacts with the controller.
+
+Controller- The controller is the component that enables the interconnection between the views and the 
+model so it acts as an intermediary. The controller doesn’t have to worry about handling data logic, 
+it just tells the model what to do. It process all the business logic and incoming requests, 
+manipulate data using the Model component and interact with the View to render the final output.
+
+
+
+
+  Q). What is difference b/w export Default and export in ReactJs??
+  Ans-->
+  Named Exports: Named exports are useful to export several values. 
+                 During the import, it is mandatory to use the same 
+                 name of the corresponding object. 
+Default Exports: Default exports are useful to export only a single
+              object, function, variable. During the import, we can
+               use any name to import.
+
+
+Q). What is diff b/w Functional Components vs Class Components
+Ans-->  Functional Components                  	                                        
+1) A functional component is just a plain JavaScript pure function 
+  that accepts props as an argument and returns a React element(JSX).
+2) There is no render method used in functional components.
+
+       Class Components 
+1)  A class component requires you to extend from React.Component 
+   and create a render function which returns a React element.
+2)	It must have the render() method returning JSX (which is
+     syntactically similar to HTML)
+
+
+Q) What id diff b/w Virtual Dom and Shallow Dom??
+Virtual Dom--->
+1) t revolves around solving performance issues.
+2) It is a complete representation of an actual DOM.
+3) It creates a copy of the whole DOM object.
+
+Shallow Dom--->
+1) It revolves around the concept of encapsulation.
+2) It is not a complete representation of the entire DOM.
+3) It creates small pieces of the DOM object having their
+ own, isolated scope.
+
+
+
+ Q). What Are Webpack and Babel?
+ Ans-->
+Webpack and Babel are tools for developers that optimize JavaScript applications.
+
+Webpack is a module bundler we can use to minify multiple files in a JavaScript 
+project and increase the overall efficiency. A module bundler takes in all the 
+assets and comes up with a single output file. This artefact can be imported 
+into our HTML, making it a more lightweight project.
+
+As for Babel, it is a syntax converter and a transpiler. There may be times 
+you want your code to be compatible with all browsers and environments, 
+including the older ones. In such instances, a great option to try out is Babel.
+
+Q) What is the default localhost server port in reactjs??
+Ans--> When we create a new react app using the npx create-react-app command,
+ the default port for the app is 3000. We can access the app from the 
+ localhost:3000.
+
+ Q). What is fragment in Reactjs??
+Ans--> React Fragment is a feature in React that allows you to return multiple
+ elements from a React component by allowing you to group a list of children 
+ without adding extra nodes to the DOM.
+
+
+ Q). What is react router in react??
+ Ans--> React Router is a standard library for routing in React. It enables the
+  navigation among views of various components in a React Application, allows 
+  changing the browser URL, and keeps the UI in sync with the URL.
+
+       */
+
 /*
            What is constructor function.
            In JavaScript, a constructor function is used to create objects.

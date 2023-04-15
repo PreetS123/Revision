@@ -1,20 +1,44 @@
+/////////////////////////Primitive Data type //////////////////////////////
+/*
+They are basic building block.
+They hold actual value of the variable.
+By Value
+It is immutable i.e value cannot be changed.
 
+Example:
+Boolean 
+Number
+Undefined
+Null
+*/
+
+////////////////////Non Primitive datatype//////////////////////////
+/*
+They hold the memory location of the value of variables
+It is Mutable datatype i.e value can be changed.
+They are stored by reference
+
+Example:
+Object
+Array
+Function
+*/
+
+//
 /////////////////////////////////////// API ////////////////////////////////
 
-// API-It stands for application programming interface. It is a set of defination and protocol that is helful in
+// API-It stands for application programming interface. API is a set of defination and protocol that is helful in
 // building and integrating web application.
 
 // Rest API---> Representational State Transfer Application Programming Interface is helpful in setting up rules
-// and regulation on how the api is going to be performed
+// and regulation on how the api is going to be performed`
 
 // We gan perform GET , POST, PUT, DELETE on the API.
-
-
 
 ///////////////////////////////  Rest Operator and Spread Operator /////////////////////////////////////////////////
 
 //Spread operator: The spread operator helps us expand an array where multiple arguments are needed,
-// it also helps to expand the object expressions. 
+// it also helps to expand the object expressions.
 //In cases where we require all the elements of an
 //iterable or object to help us achieve a task, we use a spread operator.
 
@@ -33,8 +57,6 @@
 // }
 
 //    restop(1,2,3,4,5,6,7,...ab)
-
-
 
 ///////////////////////////server side rendring vs client side rendring/////////////////////////////////////
 
@@ -64,26 +86,23 @@ response times, a more interactive application.
 7). HTML, CSS, and javascript are used.
 */
 
-
 ////////////////////////////////Multithreaded ////////////////////////////
 
 //    MultiThreading is a phenomenon of executing more that one thred at a particular time.
-    //   where execution of threads can happen parallely.
+//   where execution of threads can happen parallely.
 
-    //////////////////////////// Single threaded ///////////////////
-    // SingleThreaded is a phenomenon of javaScript where execution of code happens one after the other.
+//////////////////////////// Single threaded ///////////////////
+// SingleThreaded is a phenomenon of javaScript where execution of code happens one after the other.
 
+//////////////////////////////// Event Loop//////////////////////////////////////////
 
-   //////////////////////////////// Event Loop//////////////////////////////////////////
-
-//    Event Loop-> Event loop give us an illusion of javaScript being a multithreaded although it is single threaded.
-    // When we declare multiple functions all functions which will take time goes into eventloop.
-    // And the function which takes less time will be executed first although it is written in last of the programme.
+//    Event Loop-> Event loop give us an illusion of javaScript being a multithreaded although it is   single threaded.
+// When we declare multiple functions all functions which will take time goes into eventloop.
+// And the function which takes less time will be executed first although it is written in last of the programme.
 
 //  An event loop is something that pulls stuff out of the queue and places it onto the function execution stack
 //  whenever the function stack becomes empty.
 //  Browser attaches all the web Api to global space/Object(window object ) and this gives them access to execution stack;
-           
 
 //////////////  Higher order function /////////////////////////////////////////////
 
@@ -156,7 +175,6 @@ response times, a more interactive application.
 
 // console.log(new_promise)
 
-
 ///////////////////////////////////  CLOSURE   /////////////////////////////////////////////////////////
 
 //   Closure----> It makes it possible for a function to have a private varible .
@@ -208,8 +226,6 @@ response times, a more interactive application.
 // console.log(obj1,'obj1');
 
 // In js a prototype can also have a prototype hence creating a prototype chain.
-
-
 
 //          PROTOTYPE :-
 // 1.) With the help of Object.create
@@ -290,12 +306,10 @@ response times, a more interactive application.
 ////////////////////////////// Call Apply Bind ////////////////////////////////////////
 
 // Call ->
-// It invokes a function with  given this value , provided arguments one by one.
-
+// It directly call's the function.
 //    let employee={
 //       fname:'Preeti',
 //       lname:'Sharma',
-
 //    }
 
 //   function invites(g1,g2){
@@ -303,6 +317,32 @@ response times, a more interactive application.
 //   }
 
 //   invites.call(employee,'Hello','How are you ? ')
+
+// Method I :
+//         const objname={
+//             lname:'preeti',
+//             fname:'sharma',
+//             pname:function(){
+//                 console.log(this.fname+" "+this.lname)
+//             }
+//         },
+//         objname.pname();
+//  let name1={
+//     fname:'preeti',
+//     lname:'sharma',
+//  }
+//  objname.pname.call(name1);
+
+// Method II:
+//    let printMyName=function(){
+//     console.log(this.fname , this.lname);
+//    }
+//    printMyName.call(name1);
+// Method III:
+//  let printMyName=function(state,capital){
+//     console.log(this.fname,this.lname,state,capital)
+//  }
+//   printMyName.call(name1,'JHARKHAND','RANCHI');
 
 //Apply ---->
 // It is similar to call but argument intake is different i.e It takes argument as an array.
@@ -318,7 +358,7 @@ response times, a more interactive application.
 //  invites.apply(emp,['hello!','How are u ?']);
 
 // Bind---->
-// It returns a new function taking multiple arguments .
+// It doesn't directly invoke the function rather than it make the copy of other function and it is stored to invoke the function later.
 
 // let emp1={
 //    fname:'ram',
@@ -341,9 +381,6 @@ response times, a more interactive application.
 //the prototype of  an object is visible through Object.getPrototypeOf(obj);
 // whereas prototype on constructor functio is available on Object.prototype()
 
-
-
-
 ///////////////////////////////////////MAP(), REDUCE(), FOREACH(), FILTER()///////////////////////////////////////////
 
 // Map()--->Map method creates a new array
@@ -354,9 +391,6 @@ response times, a more interactive application.
 // ForEach()---> It doesn't return a new array .
 //               With forEach method optional chaning is not possible as it doesn't return anything.
 //                It return a undefined value.
-
-
-
 
 //////////////////////////////////Diff b/w client-side script and Server side Script///////////////////////////////////
 
@@ -427,14 +461,6 @@ response times, a more interactive application.
 //3.) If we use sticky position property then other element will not
 // fill the space left by this element.
 
-
-
-
-
-
-
-
-
 // let emp1={
 //    fname:'Md',
 //    lname:'Saif'
@@ -481,3 +507,5 @@ response times, a more interactive application.
 //   }
 
 //    closureex('saif');
+
+//
