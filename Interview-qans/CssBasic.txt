@@ -54,4 +54,10 @@ c) Element are align horizontally.
 Block element --> <div>, <p>, <h1>, <ul>, <li>.
 
 
+6) What is the difference between em and rem units in CSS?
+
+em --> em is relative to the font size of its direct or nearest parent.
+
+rem--> rem is relative to the HTMl(root) font size and HTML doesn't have its own font-size.
+
 
