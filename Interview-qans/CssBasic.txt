@@ -27,7 +27,12 @@ Relative--> Position relative is used to set the element some space from top, bo
 
 Absolute-->Position absolutes finds its nearest positioned element and it sets itself position according to that element and the gap left by this is filled by other element.
 If we want to give absolute position to a div then it will first look to its parent wheather it has position property or not. If it has a position property then the element will align its position to the parent one.
+If we apply transform filter or prospective properties in parent div then also the assigned div align itself according to the parent div.
+eg-> transform:translate(0), filter:invert(0),prospective:0px;
 
 Fixed--> Position fixed fixes the position of an element and other element occupies the space left by this element.
+
+sticky--> Position sticky fixes the element on top of the page and it is visible to us even also we scroll page.
+It is static until we scroll over it
 
 
