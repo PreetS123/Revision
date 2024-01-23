@@ -1,0 +1,31 @@
+1.) What is Box Modal?
+A css box modal is a container that contains multiple properties including border, margin, padding and the container itself.
+
+2.) Concept of CSS Specificity ? 
+  Specificity is the algorithm used by browser to determine the CSS declaration that is more relevant to the element.
+  OR
+  Specificity is an algorithm that calculates the weight that is applied to a
+given CSS declaration. The weight is determined by the number of selectors of each
+weight category in the selector matching the element
+ SPECIFICITY RULE POINT SYSTEM
+//1.) 10,000 POINT TO !Important
+//2.) 1000 POINT TO Inline
+//3.) 100 POINT to id
+//4.) 10 point to class, attribute or pseudo-class
+//5.) 1 for element selector & Pseudo-elements
+//6.) 0 point universal selectorsl
+
+3.)Visibility: hidden and none - Difference
+  None--> Visibility none removes the element from the page content. It doesn't occupy any space in the browser and the empty space is being filled by other element.
+  Hidden --> Visibility hidden occupy the space but its doesn't appear on the screen.
+
+4.)Different CSS positions of elements. static, relative, absolute, fixed, and sticky Box-sizing border-box do?
+
+Static--> It is default behaviour of css and this makes the content comes one after the other.
+
+Relative--> Position relative is used to set the element some space from top, bottom, right, or, left. We can adjust its position from its original position. Other element does't comes up and fill it position.
+
+Absolute-->Position absolutes finds its nearest positioned element and it sets itself position according to that element and the gap left by this is filled by other element.
+If we want to give absolute position to a div then it will first look to its parent wheather it has position property or not. If it has a position property then the element will align its position to the parent one.
+
+
