@@ -35,4 +35,23 @@ Fixed--> Position fixed fixes the position of an element and other element occup
 sticky--> Position sticky fixes the element on top of the page and it is visible to us even also we scroll page.
 It is static until we scroll over it
 
+5.) Difference Inline / Inline-block / Block elements
+
+Inline element--><span>, <a>, <strong>, <em>, <img>, <br>, <input>.
+Behaviour:
+a) These element takes space that is neccessary for them .
+b) Height width properties are not applicable on them.
+c) They donot start on a new line.
+d) Margin padding only affect the right and left side not on top bottom side.
+e) Element align horizontly and allow other element to sit beside.
+
+Inline-block element --> <div style="display: inline-block;">, <span style="display: inline-block;">.
+
+a) Similar to inline but they have heght and width.
+b)Margin and padding affects all four sides of the element.
+c) Element are align horizontally.
+
+Block element --> <div>, <p>, <h1>, <ul>, <li>.
+
+
 
